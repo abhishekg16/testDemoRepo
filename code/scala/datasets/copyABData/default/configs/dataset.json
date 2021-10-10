@@ -1,0 +1,9 @@
+{
+  "format" : "parquet",
+  "path" : "dbfs:/FileStore/Users/MaciejV/ptr-data/tcmls_edwau_b1auth_dtl_1.parquet/",
+  "writeMode" : null,
+  "compression" : null,
+  "partitionColumns" : null,
+  "mergeSchema" : null,
+  "datasetType" : "File"
+}
