@@ -124,6 +124,39 @@
         "datasetType" : "File"
       }
     },
+    "Reformat_64939" : {
+      "id" : "Reformat_64939",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 821,
+        "y" : 85,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "70962",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "48527",
+          "slug" : "out_0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "SetOperation_67534" : {
       "id" : "SetOperation_67534",
       "component" : "SetOperation",
@@ -150,39 +183,6 @@
       },
       "properties" : {
         "operationType" : "unionAll"
-      }
-    },
-    "Reformat_64939" : {
-      "id" : "Reformat_64939",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_0",
-        "slug" : "reformat_0",
-        "x" : 379,
-        "y" : 68,
-        "language" : "scala"
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "70962",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "48527",
-          "slug" : "out_0"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
       }
     }
   },
