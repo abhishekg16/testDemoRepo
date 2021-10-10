@@ -50,7 +50,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "format" : "csv",
+        "format" : "parquet",
         "datasetTypes" : [ {
           "label" : "FILE",
           "value" : "File",
@@ -93,38 +93,13 @@
           "value" : "text",
           "icon" : "Document"
         } ],
+        "datasetId" : "263",
         "dataset" : {
-          "multiLine" : null,
-          "path" : "",
-          "maxColumns" : null,
+          "path" : "dbfs:/FileStore/Users/MaciejV/ptr-data/tcmls_edwau_b1auth_dtl_1.parquet/",
           "writeMode" : null,
-          "separator" : ",",
           "compression" : null,
-          "nullValue" : null,
-          "ignoreLeadingWhiteSpace" : null,
-          "nanValue" : null,
-          "escapeQuotes" : null,
-          "charToEscapeQuoteEscaping" : null,
-          "encoding" : null,
-          "inferSchema" : true,
-          "enforceSchema" : null,
-          "quoteAll" : null,
-          "quote" : null,
-          "timestampFormat" : null,
-          "emptyValue" : null,
-          "ignoreTrailingWhiteSpace" : null,
           "partitionColumns" : null,
-          "schema" : null,
-          "escape" : null,
-          "positiveInf" : null,
-          "comment" : null,
-          "samplingRatio" : null,
-          "dateFormat" : null,
-          "mode" : null,
-          "header" : true,
-          "columnNameOfCorruptRecord" : null,
-          "maxCharsPerColumn" : null,
-          "negativeInf" : null
+          "mergeSchema" : null
         },
         "isNewDataset" : false,
         "datasetType" : "File"
