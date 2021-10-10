@@ -18876,6 +18876,39 @@
         } ]
       }
     },
+    "Reformat_21017" : {
+      "id" : "Reformat_21017",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "reformat_1",
+        "x" : 496,
+        "y" : 209,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "84162",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "45670",
+          "slug" : "out_0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "SetOperation_67534" : {
       "id" : "SetOperation_67534",
       "component" : "SetOperation",

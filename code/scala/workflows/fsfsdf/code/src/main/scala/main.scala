@@ -15,8 +15,11 @@ object Main {
     val df_set_operation_0_out_0 =
       set_operation_0(spark, df_source_0_out0, df_source_0_out0)
     val df_reformat_0_out_0 = reformat_0(spark, df_set_operation_0_out_0)
+    val df_reformat_1_out_0 = reformat_1(spark)
     df_reformat_0_out_0.cache().count()
     df_reformat_0_out_0.unpersist()
+    df_reformat_1_out_0.cache().count()
+    df_reformat_1_out_0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {
