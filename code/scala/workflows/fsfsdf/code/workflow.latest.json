@@ -37845,6 +37845,34 @@
         "datasetType" : "File"
       }
     },
+    "SetOperation_85376" : {
+      "id" : "SetOperation_85376",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_0",
+        "slug" : "set_operation_0",
+        "x" : 143,
+        "y" : 12,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "6691",
+          "slug" : "in0"
+        }, {
+          "id" : "1948",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "28901",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
+    },
     "Reformat_27288" : {
       "id" : "Reformat_27288",
       "component" : "Reformat",
