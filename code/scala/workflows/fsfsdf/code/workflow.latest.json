@@ -79,8 +79,8 @@
       "metadata" : {
         "label" : "SetOperation_0",
         "slug" : "set_operation_0",
-        "x" : 1020,
-        "y" : 13,
+        "x" : 801.0003235656571,
+        "y" : 434,
         "language" : "scala"
       },
       "ports" : {
@@ -134,8 +134,8 @@
       "metadata" : {
         "label" : "SetOperation_2",
         "slug" : "set_operation_2",
-        "x" : 1119,
-        "y" : 162,
+        "x" : 297.0002133739413,
+        "y" : 430,
         "language" : "scala"
       },
       "ports" : {
@@ -189,8 +189,8 @@
       "metadata" : {
         "label" : "Source_0",
         "slug" : "source_0",
-        "x" : 356,
-        "y" : 105,
+        "x" : -195.99935905081622,
+        "y" : 366,
         "language" : "scala"
       },
       "ports" : {
@@ -19001,8 +19001,8 @@
       "metadata" : {
         "label" : "SchemaTransform_0",
         "slug" : "schema_transform_0",
-        "x" : 572,
-        "y" : 172,
+        "x" : -36.999539134276404,
+        "y" : 523.5,
         "language" : "scala"
       },
       "ports" : {
@@ -37776,8 +37776,8 @@
       "metadata" : {
         "label" : "Filter_0",
         "slug" : "filter_0",
-        "x" : 1237,
-        "y" : 76,
+        "x" : 916.0009145018141,
+        "y" : 341,
         "language" : "scala"
       },
       "ports" : {
@@ -37823,8 +37823,8 @@
       "metadata" : {
         "label" : "Reformat_2",
         "slug" : "reformat_2",
-        "x" : 833,
-        "y" : 92,
+        "x" : 416.00050436653146,
+        "y" : 329.5,
         "language" : "scala"
       },
       "ports" : {
@@ -37867,8 +37867,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "reformat_1",
-        "x" : 667,
-        "y" : 63,
+        "x" : 59.00064864883433,
+        "y" : 364,
         "language" : "scala"
       },
       "ports" : {
@@ -47278,8 +47278,8 @@
       "metadata" : {
         "label" : "SetOperation_1",
         "slug" : "set_operation_1",
-        "x" : 761,
-        "y" : 258,
+        "x" : 384.0002402789338,
+        "y" : 559.5,
         "language" : "scala"
       },
       "ports" : {
