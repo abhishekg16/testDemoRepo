@@ -18942,8 +18942,8 @@
       "metadata" : {
         "label" : "Join_0",
         "slug" : "join_0",
-        "x" : 165,
-        "y" : 30,
+        "x" : 1221,
+        "y" : 50,
         "language" : "scala"
       },
       "ports" : {
