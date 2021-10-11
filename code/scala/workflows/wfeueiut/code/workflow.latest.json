@@ -19,8 +19,8 @@
       "metadata" : {
         "label" : "Source_0",
         "slug" : "source_0",
-        "x" : 12,
-        "y" : 2,
+        "x" : 568,
+        "y" : 78,
         "language" : "scala"
       },
       "ports" : {
