@@ -37,6 +37,60 @@
     "targetPort" : "14450"
   } ],
   "processes" : {
+    "Reformat_81904" : {
+      "id" : "Reformat_81904",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "reformat_1",
+        "x" : 1041,
+        "y" : 116,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "91737",
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "outputs" : [ {
+          "id" : "93284",
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ ]
+      }
+    },
     "Source_75038" : {
       "id" : "Source_75038",
       "component" : "Source",
@@ -193,6 +247,105 @@
             } ]
           },
           "header" : true
+        },
+        "isNewDataset" : false,
+        "datasetType" : "File"
+      }
+    },
+    "Source_89507" : {
+      "id" : "Source_89507",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_1",
+        "slug" : "source_1",
+        "x" : 228,
+        "y" : 88,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "51510",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "format" : "csv",
+        "datasetTypes" : [ {
+          "label" : "FILE",
+          "value" : "File",
+          "icon" : "File"
+        }, {
+          "label" : "WAREHOUSE",
+          "value" : "Warehouse",
+          "icon" : "File"
+        }, {
+          "label" : "CATALOG TABLE",
+          "value" : "Database",
+          "icon" : "Database"
+        } ],
+        "dataFormats" : [ {
+          "label" : "CSV",
+          "value" : "csv",
+          "icon" : "Csv"
+        }, {
+          "label" : "JSON",
+          "value" : "json",
+          "icon" : "Json"
+        }, {
+          "label" : "PARQUET",
+          "value" : "parquet",
+          "icon" : "Parquet"
+        }, {
+          "label" : "AVRO",
+          "value" : "avro",
+          "icon" : "File"
+        }, {
+          "label" : "DELTA",
+          "value" : "delta",
+          "icon" : "Delta"
+        }, {
+          "label" : "ORC",
+          "value" : "orc",
+          "icon" : "File"
+        }, {
+          "label" : "TEXT",
+          "value" : "text",
+          "icon" : "Document"
+        } ],
+        "dataset" : {
+          "multiLine" : null,
+          "path" : "",
+          "maxColumns" : null,
+          "writeMode" : null,
+          "separator" : ",",
+          "compression" : null,
+          "nullValue" : null,
+          "ignoreLeadingWhiteSpace" : null,
+          "nanValue" : null,
+          "escapeQuotes" : null,
+          "charToEscapeQuoteEscaping" : null,
+          "encoding" : null,
+          "inferSchema" : true,
+          "enforceSchema" : null,
+          "quoteAll" : null,
+          "quote" : null,
+          "timestampFormat" : null,
+          "emptyValue" : null,
+          "ignoreTrailingWhiteSpace" : null,
+          "partitionColumns" : null,
+          "schema" : null,
+          "escape" : null,
+          "positiveInf" : null,
+          "comment" : null,
+          "samplingRatio" : null,
+          "dateFormat" : null,
+          "mode" : null,
+          "header" : true,
+          "columnNameOfCorruptRecord" : null,
+          "maxCharsPerColumn" : null,
+          "negativeInf" : null
         },
         "isNewDataset" : false,
         "datasetType" : "File"
@@ -394,60 +547,6 @@
           },
           "description" : ""
         } ]
-      }
-    },
-    "Reformat_81904" : {
-      "id" : "Reformat_81904",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "reformat_1",
-        "x" : 1041,
-        "y" : 116,
-        "language" : "scala"
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "91737",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "first_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
-        } ],
-        "outputs" : [ {
-          "id" : "93284",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "first_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ ]
       }
     }
   },
