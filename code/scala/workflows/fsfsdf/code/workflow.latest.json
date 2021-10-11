@@ -65,6 +65,12 @@
     "sourcePort" : "45670",
     "target" : "SetOperation_10101",
     "targetPort" : "11298"
+  }, {
+    "id" : "815",
+    "source" : "Reformat_21017",
+    "sourcePort" : "45670",
+    "target" : "SetOperation_10101",
+    "targetPort" : "1055"
   } ],
   "processes" : {
     "SetOperation_47160" : {
@@ -128,8 +134,8 @@
       "metadata" : {
         "label" : "SetOperation_2",
         "slug" : "set_operation_2",
-        "x" : 962,
-        "y" : 161,
+        "x" : 965,
+        "y" : 217,
         "language" : "scala"
       },
       "ports" : {
@@ -147,11 +153,29 @@
           }
         }, {
           "id" : "1055",
-          "slug" : "in1"
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "11470",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
