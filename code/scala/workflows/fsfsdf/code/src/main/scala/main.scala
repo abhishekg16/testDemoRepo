@@ -23,8 +23,9 @@ object Main {
                                                   df_schema_transform_0_out0,
                                                   df_schema_transform_0_out0
     )
-    val df_filter_0_out0        = filter_0(spark, df_reformat_2_out_0)
-    val df_set_operation_3_out0 = set_operation_3(spark)
+    val df_filter_0_out0 = filter_0(spark, df_reformat_2_out_0)
+    val df_set_operation_3_out0 =
+      set_operation_3(spark, df_source_0_out0, df_source_0_out0)
     df_set_operation_0_out0.cache().count()
     df_set_operation_0_out0.unpersist()
     df_set_operation_2_out0.cache().count()
