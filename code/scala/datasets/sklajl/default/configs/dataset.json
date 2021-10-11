@@ -1,0 +1,26 @@
+{
+  "format" : "jdbc",
+  "temporary_aws_access_key_id" : null,
+  "path" : "airflow",
+  "writeMode" : null,
+  "forward_spark_s3_credentials" : null,
+  "query" : null,
+  "credentialUsername" : "postgres",
+  "credentialScope" : "testNewNoAmpersand",
+  "schema" : {
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "dkahkl",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    } ]
+  },
+  "diststyle" : "error",
+  "tableName" : "ab_user",
+  "jdbcUrl" : "jdbc:/postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com:5432/postgres",
+  "credentialPassword" : "prophecyfoo",
+  "aws_iam_role" : null,
+  "distkey" : "",
+  "datasetType" : "Warehouse"
+}
