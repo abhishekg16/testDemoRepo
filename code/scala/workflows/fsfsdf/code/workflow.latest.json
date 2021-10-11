@@ -56573,6 +56573,34 @@
         }
       }
     },
+    "SetOperation_1696" : {
+      "id" : "SetOperation_1696",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_3",
+        "slug" : "set_operation_3",
+        "x" : 403,
+        "y" : 56,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "45888",
+          "slug" : "in0"
+        }, {
+          "id" : "22324",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "86531",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
+    },
     "Reformat_2811" : {
       "id" : "Reformat_2811",
       "component" : "Reformat",
