@@ -59,6 +59,12 @@
     "sourcePort" : "53811",
     "target" : "SetOperation_69802",
     "targetPort" : "5950"
+  }, {
+    "id" : "850",
+    "source" : "Reformat_21017",
+    "sourcePort" : "45670",
+    "target" : "SetOperation_10101",
+    "targetPort" : "11298"
   } ],
   "processes" : {
     "SetOperation_47160" : {
@@ -129,7 +135,16 @@
       "ports" : {
         "inputs" : [ {
           "id" : "11298",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         }, {
           "id" : "1055",
           "slug" : "in1"
