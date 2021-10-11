@@ -13,6 +13,5 @@ object schema_transform_0 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
     in.drop("cmls_3ds_authntn_mthd")
-      .withColumn("new_col", col("cmls_aa_score_thrshld_excd"))
 
 }

@@ -37744,18 +37744,13 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : { }
-            }, {
-              "name" : "new_col",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
             } ]
           }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ "29927##cmls_3ds_authntn_mthd", "29927##cmls_aa_score_thrshld_excd" ],
+        "columnsSelector" : [ "29927##cmls_3ds_authntn_mthd" ],
         "transformations" : [ {
           "kind" : "DropColumn",
           "DropColumn" : {
@@ -37771,22 +37766,6 @@
               "format" : "scala",
               "expression" : "col(\"expression\")"
             }
-          }
-        }, {
-          "kind" : "AddReplaceColumn",
-          "AddReplaceColumn" : {
-            "sourceColumn" : "new_col",
-            "expression" : {
-              "format" : "scala",
-              "expression" : "col(\"cmls_aa_score_thrshld_excd\")"
-            }
-          },
-          "DropColumn" : {
-            "sourceColumn" : ""
-          },
-          "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
           }
         } ]
       }
@@ -56669,11 +56648,6 @@
               "type" : "integer",
               "nullable" : true,
               "metadata" : { }
-            }, {
-              "name" : "new_col",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
             } ]
           }
         }, {
@@ -66038,11 +66012,6 @@
               "metadata" : { }
             }, {
               "name" : "cut_no",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "new_col",
               "type" : "integer",
               "nullable" : true,
               "metadata" : { }
