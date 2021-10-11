@@ -345,6 +345,39 @@
       "properties" : {
         "operationType" : "unionAll"
       }
+    },
+    "Reformat_1234" : {
+      "id" : "Reformat_1234",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 326,
+        "y" : 33,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "92616",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "83612",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
     }
   },
   "ports" : {
