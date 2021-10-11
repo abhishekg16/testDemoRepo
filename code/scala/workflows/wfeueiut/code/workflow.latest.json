@@ -413,17 +413,38 @@
         } ],
         "outputs" : [ {
           "id" : "83612",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "92616##customer_id", "92616##first_name" ],
         "expressions" : [ {
-          "target" : "",
+          "target" : "customer_id",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "col(\"customer_id\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "first_name",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"first_name\")"
           },
           "description" : ""
         } ]
