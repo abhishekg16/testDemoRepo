@@ -19007,7 +19007,16 @@
       "ports" : {
         "inputs" : [ {
           "id" : "51462",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "5414",
@@ -28413,20 +28422,22 @@
         } ],
         "outputs" : [ {
           "id" : "45670",
-          "slug" : "out_0"
+          "slug" : "out_0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
         "columnsSelector" : [ "84162##cmls_aa_score_thrshld_excd" ],
         "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        }, {
           "target" : "cmls_aa_score_thrshld_excd",
           "expression" : {
             "format" : "scala",
