@@ -134,8 +134,8 @@
       "metadata" : {
         "label" : "SetOperation_2",
         "slug" : "set_operation_2",
-        "x" : 1134,
-        "y" : 248,
+        "x" : 1119,
+        "y" : 162,
         "language" : "scala"
       },
       "ports" : {
