@@ -37693,6 +37693,35 @@
         "outputPortNames" : [ ]
       }
     },
+    "Filter_94903" : {
+      "id" : "Filter_94903",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "slug" : "filter_0",
+        "x" : 137,
+        "y" : 19,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "95447",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "30816",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
+    },
     "Source_24546" : {
       "id" : "Source_24546",
       "component" : "Source",
