@@ -11,7 +11,13 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "161",
+    "source" : "Source_75038",
+    "sourcePort" : "99854",
+    "target" : "SetOperation_73828",
+    "targetPort" : "35760"
+  } ],
   "processes" : {
     "Source_75038" : {
       "id" : "Source_75038",
