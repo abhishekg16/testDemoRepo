@@ -12,12 +12,6 @@
     "buildSystem" : "maven"
   },
   "connections" : [ {
-    "id" : "161",
-    "source" : "Source_75038",
-    "sourcePort" : "99854",
-    "target" : "SetOperation_73828",
-    "targetPort" : "35760"
-  }, {
     "id" : "874",
     "source" : "Source_75038",
     "sourcePort" : "99854",
@@ -205,51 +199,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "35760",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "first_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "last_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "phone",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "country_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "account_open_date",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "account_flags",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in0"
         }, {
           "id" : "14450",
           "slug" : "in1"
