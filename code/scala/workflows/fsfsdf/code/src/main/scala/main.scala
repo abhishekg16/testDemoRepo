@@ -13,10 +13,10 @@ object Main {
   def apply(spark: SparkSession): Unit = {
     val df_source_0_out0 = source_0(spark)
     script_0(spark)
-    val df_source_1_out0 = source_1(spark)
-    target_0(spark)
-    val df_reformat_0_out_0 = reformat_0(spark)
+    val df_source_1_out0    = source_1(spark)
     val df_reformat_1_out_0 = reformat_1(spark, df_source_0_out0)
+    target_0(spark, df_reformat_1_out_0)
+    val df_reformat_0_out_0 = reformat_0(spark)
     val df_reformat_2_out_0 = reformat_2(spark, df_reformat_1_out_0)
     df_source_1_out0.cache().count()
     df_source_1_out0.unpersist()
