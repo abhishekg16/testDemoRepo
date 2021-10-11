@@ -111,6 +111,34 @@
         "isNewDataset" : false,
         "datasetType" : "File"
       }
+    },
+    "SetOperation_73828" : {
+      "id" : "SetOperation_73828",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_0",
+        "slug" : "set_operation_0",
+        "x" : 447,
+        "y" : 58,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "35760",
+          "slug" : "in0"
+        }, {
+          "id" : "14450",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "39277",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
     }
   },
   "ports" : {
