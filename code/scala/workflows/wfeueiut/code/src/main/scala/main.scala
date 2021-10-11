@@ -15,9 +15,7 @@ object Main {
     val df_reformat_0_out0 = reformat_0(spark, df_source_0_out0)
     val df_set_operation_0_out0 =
       set_operation_0(spark, df_source_0_out0, df_reformat_0_out0)
-    val df_reformat_1_out0 = reformat_1(spark)
-    df_set_operation_0_out0.cache().count()
-    df_set_operation_0_out0.unpersist()
+    val df_reformat_1_out0 = reformat_1(spark, df_set_operation_0_out0)
     df_reformat_1_out0.cache().count()
     df_reformat_1_out0.unpersist()
   }
