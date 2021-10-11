@@ -23,6 +23,12 @@
     "sourcePort" : "99854",
     "target" : "SetOperation_73828",
     "targetPort" : "14450"
+  }, {
+    "id" : "874",
+    "source" : "Source_75038",
+    "sourcePort" : "99854",
+    "target" : "Reformat_1234",
+    "targetPort" : "92616"
   } ],
   "processes" : {
     "Source_75038" : {
@@ -359,7 +365,51 @@
       "ports" : {
         "inputs" : [ {
           "id" : "92616",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "83612",
