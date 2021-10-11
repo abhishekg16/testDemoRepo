@@ -134,8 +134,8 @@
       "metadata" : {
         "label" : "SetOperation_2",
         "slug" : "set_operation_2",
-        "x" : 297.0002133739413,
-        "y" : 430,
+        "x" : 540.0002133739413,
+        "y" : 463,
         "language" : "scala"
       },
       "ports" : {
@@ -37823,8 +37823,8 @@
       "metadata" : {
         "label" : "Reformat_2",
         "slug" : "reformat_2",
-        "x" : 416.00050436653146,
-        "y" : 329.5,
+        "x" : 211.00050436653146,
+        "y" : 331.5,
         "language" : "scala"
       },
       "ports" : {
