@@ -116,6 +116,34 @@
         "operationType" : "unionAll"
       }
     },
+    "SetOperation_10101" : {
+      "id" : "SetOperation_10101",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_2",
+        "slug" : "set_operation_2",
+        "x" : 314,
+        "y" : 65,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "11298",
+          "slug" : "in0"
+        }, {
+          "id" : "1055",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "11470",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
+    },
     "Source_87754" : {
       "id" : "Source_87754",
       "component" : "Source",
