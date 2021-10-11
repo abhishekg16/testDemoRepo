@@ -23,6 +23,12 @@
     "sourcePort" : "39277",
     "target" : "Reformat_81904",
     "targetPort" : "91737"
+  }, {
+    "id" : "31",
+    "source" : "Reformat_1234",
+    "sourcePort" : "83612",
+    "target" : "SetOperation_73828",
+    "targetPort" : "35760"
   } ],
   "processes" : {
     "Source_75038" : {
@@ -199,7 +205,21 @@
       "ports" : {
         "inputs" : [ {
           "id" : "35760",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         }, {
           "id" : "14450",
           "slug" : "in1"
