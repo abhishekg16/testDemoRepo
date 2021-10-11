@@ -18831,6 +18831,39 @@
         "datasetType" : "File"
       }
     },
+    "Reformat_27288" : {
+      "id" : "Reformat_27288",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 216,
+        "y" : 45,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5171",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "82382",
+          "slug" : "out_0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Source_24546" : {
       "id" : "Source_24546",
       "component" : "Source",
@@ -28334,39 +28367,6 @@
           "expression" : {
             "format" : "scala",
             "expression" : "col(\"cmls_aa_score_thrshld_excd\")"
-          },
-          "description" : ""
-        } ]
-      }
-    },
-    "Reformat_27288" : {
-      "id" : "Reformat_27288",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_0",
-        "slug" : "reformat_0",
-        "x" : 217,
-        "y" : 45,
-        "language" : "scala"
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "5171",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "82382",
-          "slug" : "out_0"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
           },
           "description" : ""
         } ]
