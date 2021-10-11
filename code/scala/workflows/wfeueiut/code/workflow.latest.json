@@ -427,20 +427,27 @@
         } ],
         "outputs" : [ {
           "id" : "93284",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
         "columnsSelector" : [ ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
+        "expressions" : [ ]
       }
     }
   },
