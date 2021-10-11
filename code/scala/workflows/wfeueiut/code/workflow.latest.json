@@ -24,12 +24,6 @@
     "target" : "Reformat_1234",
     "targetPort" : "92616"
   }, {
-    "id" : "220",
-    "source" : "Reformat_1234",
-    "sourcePort" : "83612",
-    "target" : "SetOperation_73828",
-    "targetPort" : "14450"
-  }, {
     "id" : "377",
     "source" : "SetOperation_73828",
     "sourcePort" : "39277",
@@ -258,21 +252,7 @@
           }
         }, {
           "id" : "14450",
-          "slug" : "in1",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "first_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "in1"
         } ],
         "outputs" : [ {
           "id" : "39277",
