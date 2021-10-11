@@ -28260,29 +28260,15 @@
       },
       "properties" : {
         "doPivot" : false,
-        "aggregate" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ],
+        "aggregate" : [ ],
         "pivotColumn" : {
           "format" : "scala",
           "expression" : "col(\"col_name\")"
         },
         "pivotValues" : [ ],
-        "activeTab" : "groupBy",
+        "activeTab" : "pivot",
         "columnsSelector" : [ ],
-        "groupBy" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
+        "groupBy" : [ ]
       }
     },
     "Source_24546" : {
