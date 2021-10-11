@@ -20,18 +20,14 @@ object Main {
       set_operation_2(spark, df_reformat_1_out_0, df_reformat_2_out_0)
     val df_schema_transform_0_out0 = schema_transform_0(spark, df_source_0_out0)
     val df_filter_0_out0           = filter_0(spark,           df_reformat_2_out_0)
-    val df_set_operation_1_out0 = set_operation_1(spark,
-                                                  df_schema_transform_0_out0,
-                                                  df_schema_transform_0_out0
-    )
     df_set_operation_0_out0.cache().count()
     df_set_operation_0_out0.unpersist()
     df_set_operation_2_out0.cache().count()
     df_set_operation_2_out0.unpersist()
+    df_schema_transform_0_out0.cache().count()
+    df_schema_transform_0_out0.unpersist()
     df_filter_0_out0.cache().count()
     df_filter_0_out0.unpersist()
-    df_set_operation_1_out0.cache().count()
-    df_set_operation_1_out0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {
