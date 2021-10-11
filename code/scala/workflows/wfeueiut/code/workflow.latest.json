@@ -375,6 +375,39 @@
           "description" : ""
         } ]
       }
+    },
+    "Reformat_81904" : {
+      "id" : "Reformat_81904",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_1",
+        "slug" : "reformat_1",
+        "x" : 457,
+        "y" : 43,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "91737",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "93284",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
     }
   },
   "ports" : {
