@@ -37679,21 +37679,8 @@
               "metadata" : { }
             }, {
               "name" : "new_col",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "cmls_acct_ctry_cd_drvd",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "phoneNumber",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                } ]
-              },
-              "nullable" : false,
+              "type" : "integer",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
@@ -37701,7 +37688,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ "29927##cmls_3ds_authntn_mthd", "29927##cmls_aa_score_thrshld_excd", "29927##cmls_acct_ctry_cd_drvd" ],
+        "columnsSelector" : [ "29927##cmls_3ds_authntn_mthd", "29927##cmls_aa_score_thrshld_excd" ],
         "transformations" : [ {
           "kind" : "DropColumn",
           "DropColumn" : {
@@ -37725,22 +37712,6 @@
             "expression" : {
               "format" : "scala",
               "expression" : "col(\"cmls_aa_score_thrshld_excd\")"
-            }
-          },
-          "DropColumn" : {
-            "sourceColumn" : ""
-          },
-          "RenameColumn" : {
-            "sourceColumn" : "",
-            "targetColumn" : ""
-          }
-        }, {
-          "kind" : "AddReplaceColumn",
-          "AddReplaceColumn" : {
-            "sourceColumn" : "new_col",
-            "expression" : {
-              "format" : "scala",
-              "expression" : "struct(col(\"cmls_acct_ctry_cd_drvd\"), lit(\"40\").as(\"phoneNumber\"))"
             }
           },
           "DropColumn" : {
@@ -56633,21 +56604,8 @@
               "metadata" : { }
             }, {
               "name" : "new_col",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "cmls_acct_ctry_cd_drvd",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "phoneNumber",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                } ]
-              },
-              "nullable" : false,
+              "type" : "integer",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
@@ -66018,21 +65976,8 @@
               "metadata" : { }
             }, {
               "name" : "new_col",
-              "type" : {
-                "type" : "struct",
-                "fields" : [ {
-                  "name" : "cmls_acct_ctry_cd_drvd",
-                  "type" : "string",
-                  "nullable" : true,
-                  "metadata" : { }
-                }, {
-                  "name" : "phoneNumber",
-                  "type" : "string",
-                  "nullable" : false,
-                  "metadata" : { }
-                } ]
-              },
-              "nullable" : false,
+              "type" : "integer",
+              "nullable" : true,
               "metadata" : { }
             } ]
           }
