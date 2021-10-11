@@ -29,6 +29,12 @@
     "sourcePort" : "71469",
     "target" : "SchemaTransform_16052",
     "targetPort" : "29927"
+  }, {
+    "id" : "901",
+    "source" : "Reformat_2811",
+    "sourcePort" : "5414",
+    "target" : "Filter_94903",
+    "targetPort" : "95447"
   } ],
   "processes" : {
     "Source_87754" : {
@@ -37674,8 +37680,8 @@
       "metadata" : {
         "label" : "Script_0",
         "slug" : "script_0",
-        "x" : 1075,
-        "y" : 162,
+        "x" : 1123,
+        "y" : 179,
         "language" : "scala"
       },
       "ports" : {
@@ -37699,18 +37705,36 @@
       "metadata" : {
         "label" : "Filter_0",
         "slug" : "filter_0",
-        "x" : 726,
-        "y" : 217,
+        "x" : 1237,
+        "y" : 76,
         "language" : "scala"
       },
       "ports" : {
         "inputs" : [ {
           "id" : "95447",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "30816",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -37728,8 +37752,8 @@
       "metadata" : {
         "label" : "Source_1",
         "slug" : "source_1",
-        "x" : 1007,
-        "y" : 74,
+        "x" : 982,
+        "y" : 194,
         "language" : "scala"
       },
       "ports" : {
