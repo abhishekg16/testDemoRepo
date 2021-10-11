@@ -18862,6 +18862,54 @@
         "outputPortNames" : [ ]
       }
     },
+    "Aggregate_13393" : {
+      "id" : "Aggregate_13393",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "slug" : "aggregate_0",
+        "x" : 53,
+        "y" : 70,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "80781",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "43546",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ],
+        "pivotColumn" : {
+          "format" : "scala",
+          "expression" : "col(\"col_name\")"
+        },
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ ],
+        "groupBy" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Source_24546" : {
       "id" : "Source_24546",
       "component" : "Source",
