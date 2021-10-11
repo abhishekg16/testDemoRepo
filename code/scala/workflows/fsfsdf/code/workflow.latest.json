@@ -47399,6 +47399,34 @@
           "description" : ""
         } ]
       }
+    },
+    "SetOperation_69802" : {
+      "id" : "SetOperation_69802",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_1",
+        "slug" : "set_operation_1",
+        "x" : 102,
+        "y" : 95,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "24259",
+          "slug" : "in0"
+        }, {
+          "id" : "5950",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "20301",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
     }
   },
   "ports" : {

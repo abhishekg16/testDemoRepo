@@ -18,9 +18,10 @@ object Main {
       set_operation_0(spark, df_reformat_2_out_0, df_reformat_2_out_0)
     val df_schema_transform_0_out0 = schema_transform_0(spark, df_source_0_out0)
     script_0(spark)
-    val df_filter_0_out0    = filter_0(spark, df_reformat_2_out_0)
-    val df_source_1_out0    = source_1(spark)
-    val df_reformat_0_out_0 = reformat_0(spark)
+    val df_filter_0_out0        = filter_0(spark, df_reformat_2_out_0)
+    val df_source_1_out0        = source_1(spark)
+    val df_reformat_0_out_0     = reformat_0(spark)
+    val df_set_operation_1_out0 = set_operation_1(spark)
     df_set_operation_0_out0.cache().count()
     df_set_operation_0_out0.unpersist()
     df_schema_transform_0_out0.cache().count()
@@ -31,6 +32,8 @@ object Main {
     df_source_1_out0.unpersist()
     df_reformat_0_out_0.cache().count()
     df_reformat_0_out_0.unpersist()
+    df_set_operation_1_out0.cache().count()
+    df_set_operation_1_out0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {
