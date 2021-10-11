@@ -37,6 +37,34 @@
     "targetPort" : "95447"
   } ],
   "processes" : {
+    "SetOperation_47160" : {
+      "id" : "SetOperation_47160",
+      "component" : "SetOperation",
+      "metadata" : {
+        "label" : "SetOperation_0",
+        "slug" : "set_operation_0",
+        "x" : 1025,
+        "y" : -2,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "97610",
+          "slug" : "in0"
+        }, {
+          "id" : "51465",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "57390",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "operationType" : "unionAll"
+      }
+    },
     "Source_87754" : {
       "id" : "Source_87754",
       "component" : "Source",
