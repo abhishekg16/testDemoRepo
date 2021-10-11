@@ -28423,8 +28423,8 @@
       "metadata" : {
         "label" : "Reformat_2",
         "slug" : "reformat_2",
-        "x" : 863,
-        "y" : 138,
+        "x" : 833,
+        "y" : 91,
         "language" : "scala"
       },
       "ports" : {
@@ -28456,8 +28456,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "reformat_1",
-        "x" : 616,
-        "y" : 161,
+        "x" : 667,
+        "y" : 63,
         "language" : "scala"
       },
       "ports" : {
