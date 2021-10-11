@@ -18848,13 +18848,22 @@
         "language" : "scala"
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "188",
+          "slug" : "in0"
+        }, {
+          "id" : "859",
+          "slug" : "in1"
+        }, {
+          "id" : "669",
+          "slug" : "in2"
+        } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
         "script" : "",
-        "scriptMethodHeader" : "def apply(spark: SparkSession) : Script = {",
+        "scriptMethodHeader" : "def apply(spark: SparkSession, in0: Dataframe, in1: Dataframe, in2: Dataframe) : Script = {",
         "scriptMethodFooter" : "",
         "outputPortNames" : [ ]
       }
