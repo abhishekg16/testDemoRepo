@@ -28338,6 +28338,39 @@
           "description" : ""
         } ]
       }
+    },
+    "Reformat_27288" : {
+      "id" : "Reformat_27288",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 217,
+        "y" : 45,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "5171",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "82382",
+          "slug" : "out_0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
     }
   },
   "ports" : {
