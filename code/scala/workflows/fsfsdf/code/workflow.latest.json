@@ -18837,6 +18837,28 @@
         "datasetType" : "File"
       }
     },
+    "Script_25899" : {
+      "id" : "Script_25899",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_0",
+        "slug" : "script_0",
+        "x" : 16,
+        "y" : 27,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "script" : "",
+        "scriptMethodHeader" : "def apply(spark: SparkSession) : Script = {",
+        "scriptMethodFooter" : "",
+        "outputPortNames" : [ ]
+      }
+    },
     "Source_24546" : {
       "id" : "Source_24546",
       "component" : "Source",

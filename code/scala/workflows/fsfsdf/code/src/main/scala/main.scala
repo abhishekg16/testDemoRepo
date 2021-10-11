@@ -11,7 +11,8 @@ import graph._
 object Main {
 
   def apply(spark: SparkSession): Unit = {
-    val df_source_0_out0    = source_0(spark)
+    val df_source_0_out0 = source_0(spark)
+    script_0(spark)
     val df_source_1_out0    = source_1(spark)
     val df_reformat_0_out_0 = reformat_0(spark)
     val df_reformat_1_out_0 = reformat_1(spark, df_source_0_out0)
