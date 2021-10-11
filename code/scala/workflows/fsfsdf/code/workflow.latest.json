@@ -79,8 +79,8 @@
       "metadata" : {
         "label" : "SetOperation_0",
         "slug" : "set_operation_0",
-        "x" : 801.0003235656571,
-        "y" : 434,
+        "x" : 672.0003235656571,
+        "y" : 359,
         "language" : "scala"
       },
       "ports" : {
@@ -134,8 +134,8 @@
       "metadata" : {
         "label" : "SetOperation_2",
         "slug" : "set_operation_2",
-        "x" : 540.0002133739413,
-        "y" : 463,
+        "x" : 363.0002133739413,
+        "y" : 331,
         "language" : "scala"
       },
       "ports" : {
@@ -37823,8 +37823,8 @@
       "metadata" : {
         "label" : "Reformat_2",
         "slug" : "reformat_2",
-        "x" : 211.00050436653146,
-        "y" : 331.5,
+        "x" : 229.00050436653146,
+        "y" : 434.5,
         "language" : "scala"
       },
       "ports" : {
