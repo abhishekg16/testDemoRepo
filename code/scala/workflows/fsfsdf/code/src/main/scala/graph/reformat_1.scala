@@ -10,8 +10,5 @@ import udfs.UDFs._
 import udfs._
 
 object reformat_1 {
-
-  def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.select(col("cmls_aa_score_thrshld_excd"))
-
+  def apply(spark: SparkSession, in: DataFrame): DataFrame = in
 }
