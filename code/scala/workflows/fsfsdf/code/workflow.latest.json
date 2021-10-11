@@ -18849,6 +18849,39 @@
         "datasetType" : "File"
       }
     },
+    "Reformat_16369" : {
+      "id" : "Reformat_16369",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_3",
+        "slug" : "reformat_3",
+        "x" : 77,
+        "y" : 36,
+        "language" : "scala"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "45392",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "36415",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "SchemaTransform_16052" : {
       "id" : "SchemaTransform_16052",
       "component" : "SchemaTransform",
