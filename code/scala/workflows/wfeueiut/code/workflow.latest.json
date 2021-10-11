@@ -290,8 +290,8 @@
       "metadata" : {
         "label" : "Reformat_0",
         "slug" : "reformat_0",
-        "x" : 697,
-        "y" : 219,
+        "x" : 588,
+        "y" : 213,
         "language" : "scala"
       },
       "ports" : {
