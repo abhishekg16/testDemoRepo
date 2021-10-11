@@ -18936,51 +18936,6 @@
         "datasetType" : "File"
       }
     },
-    "Join_83375" : {
-      "id" : "Join_83375",
-      "component" : "Join",
-      "metadata" : {
-        "label" : "Join_0",
-        "slug" : "join_0",
-        "x" : 1221,
-        "y" : 50,
-        "language" : "scala"
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "96838",
-          "slug" : "in0"
-        }, {
-          "id" : "74946",
-          "slug" : "in1"
-        } ],
-        "outputs" : [ {
-          "id" : "9589",
-          "slug" : "out_0"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "activeTab" : "conditions",
-        "columnsSelector" : [ ],
-        "conditions" : [ {
-          "alias" : "in1",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "joinType" : "inner"
-        } ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
-      }
-    },
     "Reformat_27288" : {
       "id" : "Reformat_27288",
       "component" : "Reformat",
