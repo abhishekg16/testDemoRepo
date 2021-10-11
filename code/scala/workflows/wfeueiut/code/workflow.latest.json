@@ -29,6 +29,12 @@
     "sourcePort" : "83612",
     "target" : "SetOperation_73828",
     "targetPort" : "35760"
+  }, {
+    "id" : "713",
+    "source" : "Source_75038",
+    "sourcePort" : "99854",
+    "target" : "SetOperation_73828",
+    "targetPort" : "14450"
   } ],
   "processes" : {
     "Source_75038" : {
@@ -222,11 +228,69 @@
           }
         }, {
           "id" : "14450",
-          "slug" : "in1"
+          "slug" : "in1",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "39277",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -345,7 +409,21 @@
       "ports" : {
         "inputs" : [ {
           "id" : "91737",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "93284",
