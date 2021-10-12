@@ -32666,7 +32666,7 @@
               "target" : "row_id",
               "expression" : {
                 "format" : "scala",
-                "expression" : "row_number().over(window)"
+                "expression" : "row_number.over(window)"
               },
               "description" : ""
             } ],
