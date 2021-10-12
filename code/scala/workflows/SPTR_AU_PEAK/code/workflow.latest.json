@@ -30359,61 +30359,7 @@
         } ],
         "outputs" : [ {
           "id" : "2203",
-          "slug" : "out0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "cpd_dt",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "cpd_tm",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "acct_num_regn_cd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "prod_brnd_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "ntwrk_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "cmls_tran_seq_id_drvd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_aprv_cnt",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_tran_cnt",
-              "type" : "long",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_aprv_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_tran_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "slug" : "out0"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -30424,14 +30370,57 @@
         "sourcePort" : "30906",
         "target" : "Reformat_33951",
         "targetPort" : "74860"
-      }, {
-        "id" : "749",
-        "source" : "Reformat_33951",
-        "sourcePort" : "68312",
-        "target" : "SubGraph_85208",
-        "targetPort" : "2203"
       } ],
       "processes" : {
+        "Aggregate_86988" : {
+          "id" : "Aggregate_86988",
+          "component" : "Aggregate",
+          "metadata" : {
+            "label" : "Aggregate_0",
+            "slug" : "aggregate_0",
+            "x" : 1231,
+            "y" : 211,
+            "language" : "scala",
+            "phase" : 0
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "89810",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "67009",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "doPivot" : false,
+            "aggregate" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ],
+            "pivotColumn" : {
+              "format" : "scala",
+              "expression" : "col(\"col_name\")"
+            },
+            "pivotValues" : [ ],
+            "activeTab" : "groupBy",
+            "columnsSelector" : [ ],
+            "groupBy" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ]
+          }
+        },
         "Reformat_33951" : {
           "id" : "Reformat_33951",
           "component" : "Reformat",
@@ -30632,55 +30621,6 @@
               "expression" : {
                 "format" : "scala",
                 "expression" : "col(\"auth_us_tran_amt\")"
-              },
-              "description" : ""
-            } ]
-          }
-        },
-        "Aggregate_86988" : {
-          "id" : "Aggregate_86988",
-          "component" : "Aggregate",
-          "metadata" : {
-            "label" : "Aggregate_0",
-            "slug" : "aggregate_0",
-            "x" : 1552,
-            "y" : 286,
-            "language" : "scala",
-            "phase" : 0
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "89810",
-              "slug" : "in"
-            } ],
-            "outputs" : [ {
-              "id" : "67009",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ]
-          },
-          "properties" : {
-            "doPivot" : false,
-            "aggregate" : [ {
-              "target" : "",
-              "expression" : {
-                "format" : "scala",
-                "expression" : ""
-              },
-              "description" : ""
-            } ],
-            "pivotColumn" : {
-              "format" : "scala",
-              "expression" : "col(\"col_name\")"
-            },
-            "pivotValues" : [ ],
-            "activeTab" : "groupBy",
-            "columnsSelector" : [ ],
-            "groupBy" : [ {
-              "target" : "",
-              "expression" : {
-                "format" : "scala",
-                "expression" : ""
               },
               "description" : ""
             } ]
