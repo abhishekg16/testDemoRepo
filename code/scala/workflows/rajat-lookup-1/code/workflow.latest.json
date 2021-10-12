@@ -246,8 +246,8 @@
       },
       "properties" : {
         "isRange" : false,
-        "keyColumns" : [ ],
-        "valueColumns" : [ ],
+        "keyColumns" : [ "customer_id" ],
+        "valueColumns" : [ "first_name" ],
         "processName" : "Lookup_0"
       }
     }
