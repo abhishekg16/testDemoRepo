@@ -174,6 +174,31 @@
         "isNewDataset" : false,
         "datasetType" : "File"
       }
+    },
+    "Lookup_82736" : {
+      "id" : "Lookup_82736",
+      "component" : "Lookup",
+      "metadata" : {
+        "label" : "Lookup_0",
+        "slug" : "lookup_0",
+        "x" : 989,
+        "y" : 339,
+        "language" : "scala",
+        "phase" : "0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "44402",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "isRange" : false,
+        "keyColumns" : [ ],
+        "valueColumns" : [ ]
+      }
     }
   },
   "ports" : {
