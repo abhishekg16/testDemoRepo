@@ -30232,7 +30232,13 @@
         "selectedInputFields" : [ ]
       },
       "properties" : { },
-      "connections" : [ ],
+      "connections" : [ {
+        "id" : "663",
+        "source" : "SubGraph_85208",
+        "sourcePort" : "30906",
+        "target" : "Reformat_33951",
+        "targetPort" : "74860"
+      } ],
       "processes" : {
         "Reformat_33951" : {
           "id" : "Reformat_33951",
@@ -30240,8 +30246,8 @@
           "metadata" : {
             "label" : "Reformat_0",
             "slug" : "reformat_0",
-            "x" : 1713,
-            "y" : 195,
+            "x" : 365,
+            "y" : 107,
             "language" : "scala",
             "phase" : 0
           },
