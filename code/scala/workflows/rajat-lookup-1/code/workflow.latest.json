@@ -23,6 +23,12 @@
     "sourcePort" : "62843",
     "target" : "Reformat_88698",
     "targetPort" : "96396"
+  }, {
+    "id" : "539",
+    "source" : "Reformat_88698",
+    "sourcePort" : "3926",
+    "target" : "Filter_53446",
+    "targetPort" : "34406"
   } ],
   "processes" : {
     "Source_97372" : {
@@ -300,11 +306,39 @@
       "ports" : {
         "inputs" : [ {
           "id" : "34406",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "lookedup",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "24741",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "lookedup",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
