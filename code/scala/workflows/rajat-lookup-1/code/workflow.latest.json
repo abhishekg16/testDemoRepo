@@ -292,8 +292,8 @@
       "metadata" : {
         "label" : "MyLookup1",
         "slug" : "my_lookup_1",
-        "x" : 674,
-        "y" : 103,
+        "x" : 631,
+        "y" : 59,
         "language" : "scala",
         "phase" : "0"
       },
