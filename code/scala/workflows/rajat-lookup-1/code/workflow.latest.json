@@ -18,12 +18,6 @@
     "target" : "SetOperation_79825",
     "targetPort" : "65018"
   }, {
-    "id" : "981",
-    "source" : "Source_97372",
-    "sourcePort" : "62843",
-    "target" : "SQLStatement_43864",
-    "targetPort" : "298"
-  }, {
     "id" : "591",
     "source" : "Source_97372",
     "sourcePort" : "62843",
@@ -46980,57 +46974,14 @@
         "operationType" : "except"
       }
     },
-    "SQLStatement_43864" : {
-      "id" : "SQLStatement_43864",
-      "component" : "SQLStatement",
-      "metadata" : {
-        "label" : "SQLStatement_0",
-        "slug" : "sql_statement_0",
-        "x" : 551,
-        "y" : 300,
-        "language" : "scala",
-        "phase" : 0
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "741",
-          "slug" : "in0"
-        }, {
-          "id" : "967",
-          "slug" : "in1"
-        } ],
-        "outputs" : [ {
-          "id" : "out0",
-          "slug" : "eteer"
-        }, {
-          "id" : "227",
-          "slug" : "out_1ertert"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "fileTabs" : [ {
-          "path" : "eteer",
-          "id" : "out0",
-          "language" : "sql",
-          "content" : ""
-        }, {
-          "path" : "out_1ertert",
-          "id" : "227",
-          "language" : "sql",
-          "content" : ""
-        } ],
-        "inputPortNames" : [ "in0", "in1" ]
-      }
-    },
     "Reformat_6769" : {
       "id" : "Reformat_6769",
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_0",
         "slug" : "reformat_0",
-        "x" : 554.5,
-        "y" : 314.5,
+        "x" : 655.5,
+        "y" : 300.5,
         "language" : "scala",
         "phase" : 0
       },
