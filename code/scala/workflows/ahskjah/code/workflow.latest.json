@@ -28,12 +28,16 @@
         "inputs" : [ ],
         "outputs" : [ {
           "id" : "34904",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "format" : "csv",
+        "format" : "jdbc",
         "datasetTypes" : [ {
           "label" : "FILE",
           "value" : "File",
@@ -48,69 +52,34 @@
           "icon" : "Database"
         } ],
         "dataFormats" : [ {
-          "label" : "CSV",
-          "value" : "csv",
-          "icon" : "Csv"
-        }, {
-          "label" : "JSON",
-          "value" : "json",
-          "icon" : "Json"
-        }, {
-          "label" : "PARQUET",
-          "value" : "parquet",
-          "icon" : "Parquet"
-        }, {
-          "label" : "AVRO",
-          "value" : "avro",
+          "label" : "JDBC",
+          "value" : "jdbc",
           "icon" : "File"
-        }, {
-          "label" : "DELTA",
-          "value" : "delta",
-          "icon" : "Delta"
-        }, {
-          "label" : "ORC",
-          "value" : "orc",
-          "icon" : "File"
-        }, {
-          "label" : "TEXT",
-          "value" : "text",
-          "icon" : "Document"
         } ],
+        "datasetId" : "271",
         "dataset" : {
-          "multiLine" : null,
-          "path" : "",
-          "maxColumns" : null,
+          "textPassword" : null,
+          "lowerBound" : null,
           "writeMode" : null,
-          "separator" : ",",
-          "compression" : null,
-          "nullValue" : null,
-          "ignoreLeadingWhiteSpace" : null,
-          "nanValue" : null,
-          "escapeQuotes" : null,
-          "charToEscapeQuoteEscaping" : null,
-          "encoding" : null,
-          "inferSchema" : true,
-          "enforceSchema" : null,
-          "quoteAll" : null,
-          "quote" : null,
-          "timestampFormat" : null,
-          "emptyValue" : null,
-          "ignoreTrailingWhiteSpace" : null,
-          "partitionColumns" : null,
-          "schema" : null,
-          "escape" : null,
-          "positiveInf" : null,
-          "comment" : null,
-          "samplingRatio" : null,
-          "dateFormat" : null,
-          "mode" : null,
-          "header" : true,
-          "columnNameOfCorruptRecord" : null,
-          "maxCharsPerColumn" : null,
-          "negativeInf" : null
+          "partitionColumn" : null,
+          "query" : null,
+          "readFromSource" : "dbtable",
+          "credentialScope" : "rds_secret",
+          "upperBound" : null,
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ ]
+          },
+          "driver" : "",
+          "jdbcUrl" : "jdbc:postgresql://test-database.cqu6jgpmsfo.us-east-1.rds.amazonaws.com/asp",
+          "dbtable" : "aspect",
+          "credentialPassword" : null,
+          "textUsername" : null,
+          "numPartitions" : null,
+          "credType" : "databricksSecrets"
         },
         "isNewDataset" : false,
-        "datasetType" : "File"
+        "datasetType" : "Warehouse"
       }
     }
   },
