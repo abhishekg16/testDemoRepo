@@ -1,0 +1,23 @@
+{
+  "textPassword" : null,
+  "format" : "jdbc",
+  "lowerBound" : null,
+  "writeMode" : null,
+  "partitionColumn" : null,
+  "query" : null,
+  "readFromSource" : "dbtable",
+  "credentialScope" : "rds_secret",
+  "upperBound" : null,
+  "schema" : {
+    "type" : "struct",
+    "fields" : [ ]
+  },
+  "driver" : "",
+  "jdbcUrl" : "jdbc:postgresql://test-database.cqu6jgpmsfo.us-east-1.rds.amazonaws.com/asp",
+  "dbtable" : "aspect",
+  "credentialPassword" : null,
+  "textUsername" : null,
+  "numPartitions" : null,
+  "datasetType" : "Warehouse",
+  "credType" : "databricksSecrets"
+}
