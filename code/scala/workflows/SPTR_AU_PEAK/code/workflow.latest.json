@@ -125,8 +125,8 @@
       "metadata" : {
         "label" : "Filter_Credit",
         "slug" : "filter_credit",
-        "x" : 538,
-        "y" : 156,
+        "x" : 473,
+        "y" : 158,
         "language" : "scala",
         "phase" : 0
       },
@@ -18893,8 +18893,8 @@
       "metadata" : {
         "label" : "Reformat_Debit",
         "slug" : "reformat_debit",
-        "x" : 675,
-        "y" : -0.9999999999999716,
+        "x" : 631,
+        "y" : 33.00000000000003,
         "language" : "scala",
         "phase" : 0
       },
@@ -28797,8 +28797,8 @@
       "metadata" : {
         "label" : "SetOperation_0",
         "slug" : "set_operation_0",
-        "x" : 832,
-        "y" : 49.00000000000003,
+        "x" : 767,
+        "y" : 84.00000000000003,
         "language" : "scala",
         "phase" : 0
       },
@@ -29478,8 +29478,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "reformat_1",
-        "x" : 1458,
-        "y" : 266.11468505859375,
+        "x" : 1217,
+        "y" : 331.11468505859375,
         "language" : "scala",
         "phase" : 0
       },
@@ -29693,8 +29693,8 @@
       "metadata" : {
         "label" : "Filter_2",
         "slug" : "filter_2",
-        "x" : 585,
-        "y" : 299,
+        "x" : 687,
+        "y" : 273,
         "language" : "scala",
         "phase" : 0
       },
@@ -29861,8 +29861,8 @@
       "metadata" : {
         "label" : "Aggregate_0",
         "slug" : "aggregate_0",
-        "x" : 1606,
-        "y" : 267.11468505859375,
+        "x" : 1362,
+        "y" : 325.11468505859375,
         "language" : "scala",
         "phase" : 0
       },
@@ -30002,8 +30002,8 @@
       "metadata" : {
         "label" : "Source_1",
         "slug" : "source_1",
-        "x" : 346,
-        "y" : 287,
+        "x" : 526,
+        "y" : 268,
         "language" : "scala",
         "phase" : 0
       },
@@ -30209,14 +30209,40 @@
         "datasetType" : "File"
       }
     },
+    "SubGraph_85208" : {
+      "id" : "SubGraph_85208",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "SubGraph_0",
+        "slug" : "sub_graph_0",
+        "x" : 1498,
+        "y" : 211.11468505859375,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "30906",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "2203",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ ],
+      "processes" : { }
+    },
     "Source_99668" : {
       "id" : "Source_99668",
       "component" : "Source",
       "metadata" : {
         "label" : "Source_2",
         "slug" : "source_2",
-        "x" : 365,
-        "y" : 434.11468505859375,
+        "x" : 535,
+        "y" : 393.11468505859375,
         "language" : "scala",
         "phase" : 0
       },
@@ -30420,8 +30446,8 @@
       "metadata" : {
         "label" : "Filter_1",
         "slug" : "filter_1",
-        "x" : 939,
-        "y" : 153.00000000000003,
+        "x" : 889,
+        "y" : 159.00000000000003,
         "language" : "scala",
         "phase" : 0
       },
@@ -30878,8 +30904,8 @@
       "metadata" : {
         "label" : "Join_0",
         "slug" : "join_0",
-        "x" : 1080,
-        "y" : 313.11468505859375,
+        "x" : 1077,
+        "y" : 320.11468505859375,
         "language" : "scala",
         "phase" : 0
       },
@@ -50235,8 +50261,8 @@
       "metadata" : {
         "label" : "Filter_Debit",
         "slug" : "filter_debit",
-        "x" : 536,
-        "y" : 32,
+        "x" : 480,
+        "y" : 28,
         "language" : "scala",
         "phase" : 0
       },
@@ -69003,8 +69029,8 @@
       "metadata" : {
         "label" : "Reformat_Credit",
         "slug" : "reformat_credit",
-        "x" : 698,
-        "y" : 158,
+        "x" : 619,
+        "y" : 156,
         "language" : "scala",
         "phase" : 0
       },
