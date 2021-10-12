@@ -29548,17 +29548,134 @@
         } ],
         "outputs" : [ {
           "id" : "32990",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_aprv_cnt",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "61269##cpd_dt", "61269##cpd_tm", "61269##acct_num_regn_cd", "61269##prod_brnd_grp_cd", "61269##ntwrk_grp_cd", "61269##auth_aprv_cnt", "61269##auth_tran_cnt", "61269##auth_us_aprv_amt", "61269##auth_us_tran_amt", "61269##cmls_tran_seq_id_drvd" ],
         "expressions" : [ {
-          "target" : "",
+          "target" : "cpd_dt",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "col(\"cpd_dt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cpd_tm",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "when(length(col(\"cpd_tm\")) === lit(1),    concat(lit(\"00:00:0\"), col(\"cpd_tm\")))\n  .when(length(col(\"cpd_tm\")) === lit(2), concat(lit(\"00:00:\"), col(\"cpd_tm\")))\n  .when(length(col(\"cpd_tm\")) === lit(3),\n        concat(lit(\"00:0\"), substring(col(\"cpd_tm\"), 1, 1), lit(\":\"), substring(col(\"cpd_tm\"), 2, 2))\n  )\n  .when(length(col(\"cpd_tm\")) === lit(4),\n        concat(lit(\"00:\"), substring(col(\"cpd_tm\"), 1, 2), lit(\":\"), substring(col(\"cpd_tm\"), 3, 2))\n  )\n  .when(\n    length(col(\"cpd_tm\")) === lit(5),\n    concat(lit(\"0\"),\n           substring(col(\"cpd_tm\"), 1, 1),\n           lit(\":\"),\n           substring(col(\"cpd_tm\"), 2, 2),\n           lit(\":\"),\n           substring(col(\"cpd_tm\"), 4, 2)\n    )\n  )\n  .otherwise(\n    concat(substring(col(\"cpd_tm\"), 1, 2),\n           lit(\":\"),\n           substring(col(\"cpd_tm\"), 3, 2),\n           lit(\":\"),\n           substring(col(\"cpd_tm\"), 5, 2)\n    )\n  )"
+          },
+          "description" : ""
+        }, {
+          "target" : "acct_num_regn_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"acct_num_regn_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "prod_brnd_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"prod_brnd_grp_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "ntwrk_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"ntwrk_grp_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_aprv_cnt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"auth_aprv_cnt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_tran_cnt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"auth_tran_cnt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_aprv_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"auth_us_aprv_amt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_tran_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"auth_us_tran_amt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_tran_seq_id_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_tran_seq_id_drvd\")"
           },
           "description" : ""
         } ]
