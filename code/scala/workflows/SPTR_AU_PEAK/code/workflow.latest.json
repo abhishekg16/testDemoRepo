@@ -30941,57 +30941,83 @@
         "selectedInputFields" : [ ]
       },
       "properties" : { },
-      "connections" : [ ],
+      "connections" : [ {
+        "id" : "420",
+        "source" : "SubGraph_78221",
+        "sourcePort" : "88016",
+        "target" : "Reformat_51279",
+        "targetPort" : "27786"
+      } ],
       "processes" : {
-        "Reformat_49178" : {
-          "id" : "Reformat_49178",
-          "component" : "Reformat",
-          "metadata" : {
-            "label" : "Reformat_1",
-            "slug" : "reformat_1",
-            "x" : 1736,
-            "y" : 248,
-            "language" : "scala",
-            "phase" : 0
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "820",
-              "slug" : "in"
-            } ],
-            "outputs" : [ {
-              "id" : "56583",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ]
-          },
-          "properties" : {
-            "columnsSelector" : [ ],
-            "expressions" : [ {
-              "target" : "",
-              "expression" : {
-                "format" : "scala",
-                "expression" : ""
-              },
-              "description" : ""
-            } ]
-          }
-        },
         "Reformat_51279" : {
           "id" : "Reformat_51279",
           "component" : "Reformat",
           "metadata" : {
             "label" : "Reformat_0",
             "slug" : "reformat_0",
-            "x" : 1038,
-            "y" : 133,
+            "x" : 442,
+            "y" : 98,
             "language" : "scala",
             "phase" : 0
           },
           "ports" : {
             "inputs" : [ {
               "id" : "27786",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "cmls_tran_seq_id_drvd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "84812",
