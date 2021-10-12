@@ -250,6 +250,40 @@
         "valueColumns" : [ "first_name" ],
         "processName" : "Lookup_0"
       }
+    },
+    "Reformat_88698" : {
+      "id" : "Reformat_88698",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 1400,
+        "y" : 269,
+        "language" : "scala",
+        "phase" : "0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "96396",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "3926",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
     }
   },
   "ports" : {
