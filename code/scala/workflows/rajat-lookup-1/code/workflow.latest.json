@@ -301,7 +301,7 @@
         "x" : 1101,
         "y" : 289,
         "language" : "scala",
-        "phase" : -1
+        "phase" : 1
       },
       "ports" : {
         "inputs" : [ {
