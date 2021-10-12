@@ -30943,40 +30943,6 @@
       "properties" : { },
       "connections" : [ ],
       "processes" : {
-        "Reformat_51279" : {
-          "id" : "Reformat_51279",
-          "component" : "Reformat",
-          "metadata" : {
-            "label" : "Reformat_0",
-            "slug" : "reformat_0",
-            "x" : 1614,
-            "y" : 350,
-            "language" : "scala",
-            "phase" : 0
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "27786",
-              "slug" : "in"
-            } ],
-            "outputs" : [ {
-              "id" : "84812",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ]
-          },
-          "properties" : {
-            "columnsSelector" : [ ],
-            "expressions" : [ {
-              "target" : "",
-              "expression" : {
-                "format" : "scala",
-                "expression" : ""
-              },
-              "description" : ""
-            } ]
-          }
-        },
         "Reformat_49178" : {
           "id" : "Reformat_49178",
           "component" : "Reformat",
@@ -30995,6 +30961,40 @@
             } ],
             "outputs" : [ {
               "id" : "56583",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ ],
+            "expressions" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ]
+          }
+        },
+        "Reformat_51279" : {
+          "id" : "Reformat_51279",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_0",
+            "slug" : "reformat_0",
+            "x" : 1038,
+            "y" : 133,
+            "language" : "scala",
+            "phase" : 0
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "27786",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "84812",
               "slug" : "out"
             } ],
             "selectedInputFields" : [ ]
