@@ -29849,6 +29849,55 @@
         }
       }
     },
+    "Aggregate_94919" : {
+      "id" : "Aggregate_94919",
+      "component" : "Aggregate",
+      "metadata" : {
+        "label" : "Aggregate_0",
+        "slug" : "aggregate_0",
+        "x" : 1426,
+        "y" : 271.11468505859375,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "52438",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "83290",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "doPivot" : false,
+        "aggregate" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ],
+        "pivotColumn" : {
+          "format" : "scala",
+          "expression" : "col(\"col_name\")"
+        },
+        "pivotValues" : [ ],
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ ],
+        "groupBy" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Source_76016" : {
       "id" : "Source_76016",
       "component" : "Source",
