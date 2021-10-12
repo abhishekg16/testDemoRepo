@@ -11,12 +11,15 @@ import graph._
 object Main {
 
   def apply(spark: SparkSession): Unit = {
-    val df_source_0_out0   = source_0(spark)
+    val df_source_0_out0 = source_0(spark)
+    my_lookup_1(spark, df_source_0_out0)
     val df_reformat_0_out0 = reformat_0(spark, df_source_0_out0)
     val df_filter_0_out0   = filter_0(spark,   df_reformat_0_out0)
-    my_lookup_1(spark, df_source_0_out0)
+    val df_reformat_1_out0 = reformat_1(spark)
     df_filter_0_out0.cache().count()
     df_filter_0_out0.unpersist()
+    df_reformat_1_out0.cache().count()
+    df_reformat_1_out0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {
