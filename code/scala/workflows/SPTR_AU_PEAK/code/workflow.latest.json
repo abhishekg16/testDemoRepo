@@ -63,8 +63,8 @@
       "id" : "Reformat_31274",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_0",
-        "slug" : "reformat_0",
+        "label" : "Reformat_Credit",
+        "slug" : "reformat_credit",
         "x" : 722,
         "y" : 30,
         "language" : "scala",
