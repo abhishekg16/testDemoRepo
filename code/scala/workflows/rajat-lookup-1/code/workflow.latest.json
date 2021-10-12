@@ -23,6 +23,12 @@
     "sourcePort" : "62843",
     "target" : "SetOperation_79825",
     "targetPort" : "53855"
+  }, {
+    "id" : "981",
+    "source" : "Source_97372",
+    "sourcePort" : "62843",
+    "target" : "SQLStatement_43864",
+    "targetPort" : "298"
   } ],
   "processes" : {
     "Source_97372" : {
@@ -46987,12 +46993,15 @@
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "298",
-          "slug" : "in1"
+          "id" : "741",
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "out0",
           "slug" : "out0"
+        }, {
+          "id" : "438",
+          "slug" : "out_1"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -47002,8 +47011,13 @@
           "id" : "out0",
           "language" : "sql",
           "content" : ""
+        }, {
+          "path" : "out_1",
+          "id" : "438",
+          "language" : "sql",
+          "content" : ""
         } ],
-        "inputPortNames" : [ "in1" ]
+        "inputPortNames" : [ "in0" ]
       }
     }
   },
