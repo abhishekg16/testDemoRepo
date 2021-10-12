@@ -29436,6 +29436,36 @@
         "operationType" : "unionAll"
       }
     },
+    "Filter_72441" : {
+      "id" : "Filter_72441",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_2",
+        "slug" : "filter_2",
+        "x" : 205,
+        "y" : 50,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "14990",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "23266",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
+    },
     "Source_76016" : {
       "id" : "Source_76016",
       "component" : "Source",
