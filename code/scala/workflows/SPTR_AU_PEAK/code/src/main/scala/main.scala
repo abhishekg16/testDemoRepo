@@ -31,7 +31,7 @@ object Main {
     val df_aggregate_0_out     = aggregate_0(spark,          df_reformat_1_out)
     val df_sub_graph_hour_out0 = sub_graph_hour.apply(spark, df_aggregate_0_out)
     val df_sub_graph_min_out0  = sub_graph_min.apply(spark,  df_aggregate_0_out)
-    val df_sub_graph_1_out0    = sub_graph_1.apply(spark)
+    val df_sub_graph_1_out0    = sub_graph_1.apply(spark,    df_aggregate_0_out)
   }
 
   def main(args: Array[String]): Unit = {
