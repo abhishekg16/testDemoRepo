@@ -29937,6 +29937,36 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
               "name" : "auth_aprv_cnt",
               "type" : "double",
               "nullable" : true,
@@ -29997,9 +30027,51 @@
           "expression" : "col(\"col_name\")"
         },
         "pivotValues" : [ ],
-        "activeTab" : "aggregate",
-        "columnsSelector" : [ "52438##auth_aprv_cnt", "52438##auth_tran_cnt", "52438##auth_us_aprv_amt", "52438##auth_us_tran_amt" ],
-        "groupBy" : [ ]
+        "activeTab" : "groupBy",
+        "columnsSelector" : [ "52438##cpd_dt", "52438##cpd_tm", "52438##acct_num_regn_cd", "52438##prod_brnd_grp_cd", "52438##ntwrk_grp_cd", "52438##cmls_tran_seq_id_drvd", "52438##auth_aprv_cnt", "52438##auth_tran_cnt", "52438##auth_us_aprv_amt", "52438##auth_us_tran_amt" ],
+        "groupBy" : [ {
+          "target" : "cpd_dt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cpd_dt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cpd_tm",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cpd_tm\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "acct_num_regn_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"acct_num_regn_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "prod_brnd_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"prod_brnd_grp_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "ntwrk_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"ntwrk_grp_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_tran_seq_id_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_tran_seq_id_drvd\")"
+          },
+          "description" : ""
+        } ]
       }
     },
     "Source_76016" : {
@@ -30233,6 +30305,36 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
               "name" : "auth_aprv_cnt",
               "type" : "double",
               "nullable" : true,
@@ -30261,6 +30363,36 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
               "name" : "auth_aprv_cnt",
               "type" : "double",
               "nullable" : true,
@@ -30318,6 +30450,36 @@
               "schema" : {
                 "type" : "struct",
                 "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "cmls_tran_seq_id_drvd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
                   "name" : "auth_aprv_cnt",
                   "type" : "double",
                   "nullable" : true,
@@ -30346,6 +30508,36 @@
               "schema" : {
                 "type" : "struct",
                 "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "cmls_tran_seq_id_drvd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
                   "name" : "auth_aprv_cnt",
                   "type" : "double",
                   "nullable" : true,
