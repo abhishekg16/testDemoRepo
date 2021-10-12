@@ -12,7 +12,9 @@ object Main {
 
   def apply(spark: SparkSession): Unit = {
     val df_source_0_out0 = source_0(spark)
-    lookup_0(spark, df_source_0_out0)
+    lookup_0(spark)
+    df_source_0_out0.cache().count()
+    df_source_0_out0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {
