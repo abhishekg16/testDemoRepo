@@ -37627,6 +37627,36 @@
           "expression" : "(col(\"cpd_dt\") === lit(Config.CPD_DT)).and(substring(col(\"cmls_tran_seq_id_drvd\"), 4, 1) === lit(\"D\")).and(col(\"CMLS_REQST_MSG_TYP\").isin(\"0100\", \"0200\", \"0201\", \"0220\", \"0221\", \"0400\", \"0420\", \"0421\", \"0422\", \"0423\", \"9240\", \"9250\", \"9242\", \"9252\")).and(!col(\"cmls_acqr_pcr_drvd\").isin(\"9088\", \"8088\").and(!col(\"cmls_vip_rsi_msg_catgy\").isin(\"00155\", \"00156\", \"00159\", \"00094\")))"
         }
       }
+    },
+    "Filter_21380" : {
+      "id" : "Filter_21380",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "filter_1",
+        "x" : 822,
+        "y" : 242,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "52693",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "30899",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
     }
   },
   "ports" : {

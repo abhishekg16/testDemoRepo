@@ -13,6 +13,7 @@ object Main {
   def apply(spark: SparkSession): Unit = {
     val df_source_0_out     = source_0(spark)
     val df_filter_debit_out = filter_debit(spark, df_source_0_out)
+    val df_filter_1_out     = filter_1(spark)
   }
 
   def main(args: Array[String]): Unit = {
