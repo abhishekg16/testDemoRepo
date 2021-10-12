@@ -129,12 +129,6 @@
     "sourcePort" : "83290",
     "target" : "SubGraph_78221",
     "targetPort" : "88016"
-  }, {
-    "id" : "211",
-    "source" : "Aggregate_94919",
-    "sourcePort" : "83290",
-    "target" : "SubGraph_76069",
-    "targetPort" : "7050"
   } ],
   "processes" : {
     "Filter_21380" : {
@@ -70194,86 +70188,6 @@
           "expression" : "(col(\"cpd_dt\") === lit(Config.CPD_DT)).and(substring(col(\"cmls_tran_seq_id_drvd\"), 4, 1) === lit(\"D\")).and(col(\"CMLS_REQST_MSG_TYP\").isin(\"0100\", \"0200\", \"0201\", \"0220\", \"0221\", \"0400\", \"0420\", \"0421\", \"0422\", \"0423\", \"9240\", \"9250\", \"9242\", \"9252\")).and(!col(\"cmls_acqr_pcr_drvd\").isin(\"9088\", \"8088\").and(!col(\"cmls_vip_rsi_msg_catgy\").isin(\"00155\", \"00156\", \"00159\", \"00094\")))"
         }
       }
-    },
-    "SubGraph_76069" : {
-      "id" : "SubGraph_76069",
-      "component" : "SubGraph",
-      "metadata" : {
-        "label" : "SubGraph_1",
-        "slug" : "sub_graph_1",
-        "x" : 1488,
-        "y" : 400,
-        "language" : "scala",
-        "phase" : 0
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "7050",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "cpd_dt",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "cpd_tm",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "acct_num_regn_cd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "prod_brnd_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "ntwrk_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "cmls_tran_seq_id_drvd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_aprv_cnt",
-              "type" : "double",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_tran_cnt",
-              "type" : "long",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_aprv_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_tran_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
-        } ],
-        "outputs" : [ {
-          "id" : "92655",
-          "slug" : "out0"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : { },
-      "connections" : [ ],
-      "processes" : { }
     },
     "Reformat_31274" : {
       "id" : "Reformat_31274",
