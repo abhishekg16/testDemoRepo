@@ -9,9 +9,14 @@ import udfs._
 import graph._
 
 object Main {
-  def apply(spark: SparkSession): Unit = {}
 
-  def main(args:   Array[String]): Unit = {
+  def apply(spark: SparkSession): Unit = {
+    val df_source_0_out0 = source_0(spark)
+    df_source_0_out0.cache().count()
+    df_source_0_out0.unpersist()
+  }
+
+  def main(args: Array[String]): Unit = {
     import config._
     ConfigStore.Config = ConfigurationFactoryImpl.fromCLI(args)
     val spark: SparkSession = SparkSession
