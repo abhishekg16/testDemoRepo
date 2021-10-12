@@ -30233,7 +30233,42 @@
       },
       "properties" : { },
       "connections" : [ ],
-      "processes" : { }
+      "processes" : {
+        "Reformat_33951" : {
+          "id" : "Reformat_33951",
+          "component" : "Reformat",
+          "metadata" : {
+            "label" : "Reformat_0",
+            "slug" : "reformat_0",
+            "x" : 1713,
+            "y" : 195,
+            "language" : "scala",
+            "phase" : 0
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "74860",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "68312",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "columnsSelector" : [ ],
+            "expressions" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ]
+          }
+        }
+      }
     },
     "Source_99668" : {
       "id" : "Source_99668",
