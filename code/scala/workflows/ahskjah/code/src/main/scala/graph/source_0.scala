@@ -20,10 +20,10 @@ object source_0 {
                   "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp"
           )
           .option("user",
-                  dbutils.secrets.get(scope = "rds_secret", key = "username")
+                  dbutils.secrets.get(scope = "testGCred", key = "username")
           )
           .option("password",
-                  dbutils.secrets.get(scope = "rds_secret", key = "password")
+                  dbutils.secrets.get(scope = "testGCred", key = "password")
           )
           .option("dbtable", "aspect")
           .option("driver",  "org.postgresql.Driver")

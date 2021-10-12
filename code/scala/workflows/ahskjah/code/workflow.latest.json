@@ -31,7 +31,27 @@
           "slug" : "out",
           "schema" : {
             "type" : "struct",
-            "fields" : [ ]
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
           }
         } ],
         "selectedInputFields" : [ ]
@@ -64,16 +84,37 @@
           "partitionColumn" : null,
           "query" : null,
           "readFromSource" : "dbtable",
-          "credentialScope" : "rds_secret",
+          "credentialUsername" : "sdl",
+          "credentialScope" : "testGCred",
           "upperBound" : null,
           "schema" : {
             "type" : "struct",
-            "fields" : [ ]
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
           },
           "driver" : "org.postgresql.Driver",
           "jdbcUrl" : "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp",
           "dbtable" : "aspect",
-          "credentialPassword" : null,
+          "credentialPassword" : "5dlau20",
           "textUsername" : null,
           "numPartitions" : null,
           "credType" : "databricksSecrets"
