@@ -9446,17 +9446,542 @@
         } ],
         "outputs" : [ {
           "id" : "89886",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_acct_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_cpd_tm",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_regn_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_resp_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_iso_tran_amt_usd",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_poscond_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_proc_tran_cd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_vic",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acqr_bin_enr",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_reqst_msg_typ_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_ntwrk_id_enr",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_ctry_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_rng_svc_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acqr_bin_ctry_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acqr_bin_regn_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_eci_moto_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_mrch_catg_cd_enr",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_mrch_ctry_cd_enr",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_vcis_jrsdctn_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_mrch_regn_cd_enr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_mrch_st_cd_glbl_enr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_pos_env_cd_enr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_posentry_mode_cd_enr",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_ppd_sub_typ_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_typ_ext_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_num_alp_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_typ_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_sys_srce_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_iso_tran_amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_cshbk_amt_usd",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acqr_ntwrk_id_drvd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_crd_id_mthd_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_prod_id_alp_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_id_subtyp_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_fundg_srce_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_fundg_subtyp_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_lvl_procg_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_brnd_cd_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_id_num_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_prod_num_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_acct_num_ri",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_aa_score_thrshld_excd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "929##cmls_acct_num", "929##cmls_cpd_dt", "929##cmls_auth_time", "929##cmls_acct_regn_cd_drvd", "929##cmls_resp_cd", "929##cmls_iso_tran_amt_usd", "929##cmls_poscond_cd", "929##cmls_proc_tran_cd", "929##cmls_vic", "929##cmls_acqr_bin_enr", "929##cmls_reqst_msg_typ_drvd", "929##cmls_acct_ctry_cd_drvd", "929##cmls_acct_rng_svc_cd_drvd", "929##cmls_acqr_bin_ctry_cd_drvd", "929##cmls_acqr_bin_regn_cd_drvd", "929##cmls_eci_moto_cd_drvd", "929##cmls_mrch_catg_cd_enr", "929##cmls_mrch_ctry_cd_num_drvd", "929##cmls_vcis_jrsdctn_cd_drvd", "929##cmls_mrch_regn_cd_enr", "929##cmls_mrch_st_cd_glbl_enr", "929##cmls_pos_env_cd_enr", "929##cmls_posentry_mode_cd_enr", "929##cmls_ppd_sub_typ_cd_drvd", "929##cmls_prod_typ_ext_drvd", "929##cmls_prod_num_alp_drvd", "929##cmls_prod_typ_cd_drvd", "929##cmls_iso_tran_amt", "929##cmls_cshbk_amt_usd", "929##cmls_tran_seq_id_drvd", "929##cmls_acqr_ntwrk_id_drvd", "929##cmls_crd_id_mthd_cd", "929##cmls_acct_prod_id_alp_drvd", "929##cmls_prod_id_subtyp_cd_drvd", "929##cmls_acct_fundg_srce_cd_drvd", "929##cmls_acct_fundg_subtyp_cd_drvd", "929##cmls_acct_lvl_procg_cd_drvd", "929##cmls_prod_brnd_cd_drvd", "929##cmls_prod_id_num_drvd", "929##cmls_prod_num_drvd", "929##cmls_acct_num_ri", "929##cmls_aa_score_thrshld_excd" ],
         "expressions" : [ {
-          "target" : "",
+          "target" : "cmls_acct_num",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "col(\"cmls_acct_num\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_cpd_dt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_cpd_dt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_cpd_tm",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_auth_time\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_regn_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_regn_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_resp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_resp_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_iso_tran_amt_usd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_iso_tran_amt_usd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_poscond_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_poscond_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_proc_tran_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_proc_tran_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_vic",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_vic\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acqr_bin_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acqr_bin_enr\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_reqst_msg_typ_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_reqst_msg_typ_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_ntwrk_id_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "lit(1)"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_ctry_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_ctry_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_rng_svc_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_rng_svc_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acqr_bin_ctry_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acqr_bin_ctry_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acqr_bin_regn_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acqr_bin_regn_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_eci_moto_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_eci_moto_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_mrch_catg_cd_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_mrch_catg_cd_enr\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_mrch_ctry_cd_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_mrch_ctry_cd_num_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_vcis_jrsdctn_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_vcis_jrsdctn_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_mrch_regn_cd_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_mrch_regn_cd_enr\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_mrch_st_cd_glbl_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "when(trim(col(\"cmls_mrch_st_cd_glbl_enr\")) === lit(\"\"), lit(\"--\"))\n        .otherwise(col(\"cmls_mrch_st_cd_glbl_enr\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_pos_env_cd_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_pos_env_cd_enr\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_posentry_mode_cd_enr",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_posentry_mode_cd_enr\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_ppd_sub_typ_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_ppd_sub_typ_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_typ_ext_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_typ_ext_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_num_alp_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_num_alp_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_typ_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_typ_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_sys_srce_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "lit(\"B\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_iso_tran_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_iso_tran_amt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_cshbk_amt_usd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_cshbk_amt_usd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_tran_seq_id_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_tran_seq_id_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acqr_ntwrk_id_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acqr_ntwrk_id_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_crd_id_mthd_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_crd_id_mthd_cd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_prod_id_alp_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_prod_id_alp_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_id_subtyp_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_id_subtyp_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_fundg_srce_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_fundg_srce_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_fundg_subtyp_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_fundg_subtyp_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_lvl_procg_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_lvl_procg_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_brnd_cd_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_brnd_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_id_num_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_id_num_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_prod_num_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_prod_num_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_acct_num_ri",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_acct_num_ri\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_aa_score_thrshld_excd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"cmls_aa_score_thrshld_excd\")"
           },
           "description" : ""
         } ]
