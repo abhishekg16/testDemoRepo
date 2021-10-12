@@ -47002,6 +47002,9 @@
         "outputs" : [ {
           "id" : "out0",
           "slug" : "out0"
+        }, {
+          "id" : "227",
+          "slug" : "out_1"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -47009,6 +47012,11 @@
         "fileTabs" : [ {
           "path" : "out0",
           "id" : "out0",
+          "language" : "sql",
+          "content" : ""
+        }, {
+          "path" : "out_1",
+          "id" : "227",
           "language" : "sql",
           "content" : ""
         } ],
