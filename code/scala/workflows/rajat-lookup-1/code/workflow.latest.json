@@ -187,6 +187,76 @@
         "datasetType" : "File"
       }
     },
+    "Lookup_82736" : {
+      "id" : "Lookup_82736",
+      "component" : "Lookup",
+      "metadata" : {
+        "label" : "MyLookup1",
+        "slug" : "my_lookup_1",
+        "x" : 631,
+        "y" : 59,
+        "language" : "scala",
+        "phase" : "0"
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "44402",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "customer_id",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "first_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "isRange" : false,
+        "keyColumns" : [ "customer_id" ],
+        "valueColumns" : [ "first_name" ],
+        "processName" : "MyLookup1"
+      }
+    },
     "Reformat_88698" : {
       "id" : "Reformat_88698",
       "component" : "Reformat",
@@ -286,74 +356,34 @@
         } ]
       }
     },
-    "Lookup_82736" : {
-      "id" : "Lookup_82736",
-      "component" : "Lookup",
+    "Filter_53446" : {
+      "id" : "Filter_53446",
+      "component" : "Filter",
       "metadata" : {
-        "label" : "MyLookup1",
-        "slug" : "my_lookup_1",
-        "x" : 631,
-        "y" : 59,
+        "label" : "Filter_0",
+        "slug" : "filter_0",
+        "x" : 1332,
+        "y" : 39,
         "language" : "scala",
         "phase" : "0"
       },
       "ports" : {
         "inputs" : [ {
-          "id" : "44402",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "first_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "last_name",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "phone",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "email",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "country_code",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "account_open_date",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "account_flags",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
+          "id" : "34406",
+          "slug" : "in"
         } ],
-        "outputs" : [ ],
+        "outputs" : [ {
+          "id" : "24741",
+          "slug" : "out0"
+        } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "isRange" : false,
-        "keyColumns" : [ "customer_id" ],
-        "valueColumns" : [ "first_name" ],
-        "processName" : "MyLookup1"
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
       }
     }
   },
