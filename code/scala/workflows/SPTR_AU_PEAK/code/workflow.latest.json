@@ -32663,25 +32663,31 @@
           },
           "properties" : {
             "expressionColumns" : [ {
-              "target" : "target_column",
+              "target" : "row_id",
               "expression" : {
                 "format" : "scala",
-                "expression" : "count(col(\"column_name\")).over(window)"
+                "expression" : "row_number().over(window)"
               },
               "description" : ""
             } ],
             "partitionColumns" : [ {
               "format" : "scala",
-              "expression" : "col(\"foo\")"
+              "expression" : "col(\"cpd_dt\")"
+            }, {
+              "format" : "scala",
+              "expression" : "col(\"acct_num_regn_cd\")"
+            }, {
+              "format" : "scala",
+              "expression" : "col(\"ntwrk_grp_cd\")"
             } ],
-            "activeTab" : "windowPartition",
-            "columnsSelector" : [ ],
+            "activeTab" : "windowUse",
+            "columnsSelector" : [ "19795##cpd_dt", "19795##acct_num_regn_cd", "19795##ntwrk_grp_cd", "19795##auth_tran_cnt" ],
             "orderColumns" : [ {
               "expression" : {
                 "format" : "scala",
-                "expression" : "col(\"age\")"
+                "expression" : "col(\"auth_tran_cnt\")"
               },
-              "sortType" : "asc"
+              "sortType" : "desc"
             } ]
           }
         },
