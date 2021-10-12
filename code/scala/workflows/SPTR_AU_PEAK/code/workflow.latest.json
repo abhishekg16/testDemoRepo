@@ -31606,6 +31606,40 @@
         "datasetType" : "File"
       }
     },
+    "Reformat_23832" : {
+      "id" : "Reformat_23832",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_2",
+        "slug" : "reformat_2",
+        "x" : 1581,
+        "y" : 137.3328857421875,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "26473",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "5634",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Filter_91512" : {
       "id" : "Filter_91512",
       "component" : "Filter",
