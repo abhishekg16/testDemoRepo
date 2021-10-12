@@ -30875,33 +30875,174 @@
         } ],
         "outputs" : [ {
           "id" : "18428",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cmls_acct_num",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_aprv_cnt",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "integer",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cmls_tran_seq_id_drvd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_resp_rlup_cd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "activeTab" : "conditions",
+        "activeTab" : "expressions",
         "columnsSelector" : [ ],
         "conditions" : [ {
           "alias" : "in1",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "col(\"in0.cmls_ntwrk_id_enr\") === col(\"in1.ntwrk_id\")"
           },
-          "joinType" : "inner"
+          "joinType" : "left_outer"
         }, {
           "alias" : "in2",
           "expression" : {
             "format" : "scala",
-            "expression" : "col(\"in2.id\") === col(\"in1.id\")"
+            "expression" : "col(\"in0.cmls_resp_cd\") === col(\"in2.auth_resp_cd\") and col(\"in2.dt\") === lit(Config.RUN_DATE)"
           },
           "joinType" : "inner"
         } ],
         "expressions" : [ {
-          "target" : "",
+          "target" : "cmls_acct_num",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "col(\"in0.cmls_acct_num\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "prod_brnd_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "when(col(\"in0.cmls_prod_brnd_cd_drvd\") === lit(\"VISA\") or col(\"in0.cmls_prod_brnd_cd_drvd\") === lit(\"IL\"), lit(\"V\")).when(col(\"in0.cmls_prod_brnd_cd_drvd\") === lit(\"PLUS\"), lit(\"P\")).otherwise(lit(\"O\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "ntwrk_grp_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "coalesce(col(\"in1.ntwrk_grp_cd\"), lit(\"O\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_aprv_cnt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "when(col(\"in2.auth_resp_rlup_cd\") === lit(0), lit(\"1\")).otherwise(lit(\"0\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_tran_cnt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "lit(1)"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_aprv_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "when(col(\"in2.auth_resp_rlup_cd\") === lit(0), col(\"in0.cmls_iso_tran_amt_usd\")).otherwise(lit(0))"
+          },
+          "description" : ""
+        }, {
+          "target" : "cmls_tran_seq_id_drvd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in0.cmls_tran_seq_id_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cpd_dt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in0.cmls_cpd_dt\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "acct_num_regn_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in0.cmls_acct_regn_cd_drvd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "cpd_tm",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in0.cmls_cpd_tm\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_tran_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in0.cmls_iso_tran_amt_usd\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_resp_rlup_cd",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in2.auth_resp_rlup_cd\")"
           },
           "description" : ""
         } ]
