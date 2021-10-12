@@ -11,7 +11,13 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven"
   },
-  "connections" : [ ],
+  "connections" : [ {
+    "id" : "631",
+    "source" : "Source_31885",
+    "sourcePort" : "34904",
+    "target" : "Target_54232",
+    "targetPort" : "56458"
+  } ],
   "processes" : {
     "Source_31885" : {
       "id" : "Source_31885",
@@ -137,7 +143,31 @@
       "ports" : {
         "inputs" : [ {
           "id" : "56458",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ ],
         "selectedInputFields" : [ ]
@@ -173,6 +203,30 @@
           "credentialUsername" : null,
           "credentialScope" : "fasf",
           "upperBound" : null,
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          },
           "driver" : "akjsdhkja",
           "jdbcUrl" : "fasfsa",
           "dbtable" : "faf",
