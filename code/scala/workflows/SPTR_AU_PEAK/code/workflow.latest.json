@@ -18837,8 +18837,8 @@
       "id" : "Reformat_76483",
       "component" : "Reformat",
       "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "reformat_1",
+        "label" : "Reformat_Debit",
+        "slug" : "reformat_debit",
         "x" : 675,
         "y" : -0.9999999999999716,
         "language" : "scala",

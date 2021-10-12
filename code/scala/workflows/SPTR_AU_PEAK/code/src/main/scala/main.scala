@@ -14,7 +14,7 @@ object Main {
     val df_source_0_out        = source_0(spark)
     val df_filter_credit_out   = filter_credit(spark,   df_source_0_out)
     val df_filter_debit_out    = filter_debit(spark,    df_source_0_out)
-    val df_reformat_1_out      = reformat_1(spark,      df_filter_debit_out)
+    val df_reformat_debit_out  = reformat_debit(spark,  df_filter_debit_out)
     val df_reformat_credit_out = reformat_credit(spark, df_filter_credit_out)
   }
 
