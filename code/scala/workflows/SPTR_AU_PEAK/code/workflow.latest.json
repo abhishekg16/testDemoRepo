@@ -30636,6 +30636,55 @@
               "description" : ""
             } ]
           }
+        },
+        "Aggregate_86988" : {
+          "id" : "Aggregate_86988",
+          "component" : "Aggregate",
+          "metadata" : {
+            "label" : "Aggregate_0",
+            "slug" : "aggregate_0",
+            "x" : 1552,
+            "y" : 286,
+            "language" : "scala",
+            "phase" : 0
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "89810",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "67009",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ]
+          },
+          "properties" : {
+            "doPivot" : false,
+            "aggregate" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ],
+            "pivotColumn" : {
+              "format" : "scala",
+              "expression" : "col(\"col_name\")"
+            },
+            "pivotValues" : [ ],
+            "activeTab" : "groupBy",
+            "columnsSelector" : [ ],
+            "groupBy" : [ {
+              "target" : "",
+              "expression" : {
+                "format" : "scala",
+                "expression" : ""
+              },
+              "description" : ""
+            } ]
+          }
         }
       }
     },
