@@ -32233,20 +32233,102 @@
             } ],
             "outputs" : [ {
               "id" : "43957",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "peak_rec_typ_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
           "properties" : {
             "doPivot" : false,
-            "aggregate" : [ ],
+            "aggregate" : [ {
+              "target" : "auth_tran_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_tran_cnt\"))"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_aprv_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_aprv_cnt\"))"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_aprv_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_us_aprv_amt\")).cast(DecimalType(18, 2))"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_tran_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_us_tran_amt\")).cast(DecimalType(18, 2))"
+              },
+              "description" : ""
+            } ],
             "pivotColumn" : {
               "format" : "scala",
               "expression" : "col(\"col_name\")"
             },
             "pivotValues" : [ ],
-            "activeTab" : "groupBy",
-            "columnsSelector" : [ "83235##cpd_dt", "83235##cpd_tm", "83235##acct_num_regn_cd", "83235##prod_brnd_grp_cd", "83235##ntwrk_grp_cd", "83235##peak_rec_typ_cd" ],
+            "activeTab" : "aggregate",
+            "columnsSelector" : [ "83235##cpd_dt", "83235##cpd_tm", "83235##acct_num_regn_cd", "83235##prod_brnd_grp_cd", "83235##ntwrk_grp_cd", "83235##peak_rec_typ_cd", "83235##auth_tran_cnt", "83235##auth_aprv_cnt", "83235##auth_us_aprv_amt", "83235##auth_us_tran_amt" ],
             "groupBy" : [ {
               "target" : "cpd_dt",
               "expression" : {
