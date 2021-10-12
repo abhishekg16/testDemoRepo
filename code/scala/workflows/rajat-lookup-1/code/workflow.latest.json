@@ -419,40 +419,6 @@
           "expression" : "lit(true)"
         }
       }
-    },
-    "Reformat_26483" : {
-      "id" : "Reformat_26483",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_1",
-        "slug" : "reformat_1",
-        "x" : 1302,
-        "y" : 281,
-        "language" : "scala",
-        "phase" : 0
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "64393",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "60126",
-          "slug" : "out0"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
-      }
     }
   },
   "ports" : {
