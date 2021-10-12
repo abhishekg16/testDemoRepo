@@ -32584,52 +32584,6 @@
               "description" : ""
             } ]
           }
-        },
-        "WindowFunction_92329" : {
-          "id" : "WindowFunction_92329",
-          "component" : "WindowFunction",
-          "metadata" : {
-            "label" : "WindowFunction_0",
-            "slug" : "window_function_0",
-            "x" : 66,
-            "y" : 259,
-            "language" : "scala",
-            "phase" : 0
-          },
-          "ports" : {
-            "inputs" : [ {
-              "id" : "40907",
-              "slug" : "in"
-            } ],
-            "outputs" : [ {
-              "id" : "77748",
-              "slug" : "out"
-            } ],
-            "selectedInputFields" : [ ]
-          },
-          "properties" : {
-            "expressionColumns" : [ {
-              "target" : "target_column",
-              "expression" : {
-                "format" : "scala",
-                "expression" : "count(col(\"column_name\")).over(window)"
-              },
-              "description" : ""
-            } ],
-            "partitionColumns" : [ {
-              "format" : "scala",
-              "expression" : "col(\"foo\")"
-            } ],
-            "activeTab" : "windowPartition",
-            "columnsSelector" : [ ],
-            "orderColumns" : [ {
-              "expression" : {
-                "format" : "scala",
-                "expression" : "col(\"age\")"
-              },
-              "sortType" : "asc"
-            } ]
-          }
         }
       }
     },
