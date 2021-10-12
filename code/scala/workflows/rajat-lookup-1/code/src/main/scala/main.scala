@@ -14,8 +14,11 @@ object Main {
     val df_source_0_out0 = source_0(spark)
     val df_set_operation_0_out0 =
       set_operation_0(spark, df_source_0_out0, df_source_0_out0)
+    val df_sql_statement_0_out0 = sql_statement_0(spark)
     df_set_operation_0_out0.cache().count()
     df_set_operation_0_out0.unpersist()
+    df_sql_statement_0_out0.cache().count()
+    df_sql_statement_0_out0.unpersist()
   }
 
   def main(args: Array[String]): Unit = {

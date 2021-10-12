@@ -46973,6 +46973,35 @@
       "properties" : {
         "operationType" : "unionAll"
       }
+    },
+    "SQLStatement_43864" : {
+      "id" : "SQLStatement_43864",
+      "component" : "SQLStatement",
+      "metadata" : {
+        "label" : "SQLStatement_0",
+        "slug" : "sql_statement_0",
+        "x" : 703,
+        "y" : 518,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "61766",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "fileTabs" : [ {
+          "path" : "out0",
+          "id" : "out0",
+          "language" : "sql",
+          "content" : ""
+        } ],
+        "inputPortNames" : [ ]
+      }
     }
   },
   "ports" : {
