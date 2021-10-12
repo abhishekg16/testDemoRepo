@@ -30486,6 +30486,52 @@
         }
       }
     },
+    "Join_83003" : {
+      "id" : "Join_83003",
+      "component" : "Join",
+      "metadata" : {
+        "label" : "Join_0",
+        "slug" : "join_0",
+        "x" : 1070,
+        "y" : 292.11468505859375,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "11189",
+          "slug" : "in0"
+        }, {
+          "id" : "23717",
+          "slug" : "in1"
+        } ],
+        "outputs" : [ {
+          "id" : "18428",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "activeTab" : "conditions",
+        "columnsSelector" : [ ],
+        "conditions" : [ {
+          "alias" : "in1",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "joinType" : "inner"
+        } ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
+    },
     "Source_78619" : {
       "id" : "Source_78619",
       "component" : "Source",
