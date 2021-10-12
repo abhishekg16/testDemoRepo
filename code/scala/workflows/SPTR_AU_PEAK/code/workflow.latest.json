@@ -65,8 +65,8 @@
       "metadata" : {
         "label" : "Reformat_Credit",
         "slug" : "reformat_credit",
-        "x" : 722,
-        "y" : 30,
+        "x" : 692,
+        "y" : 32,
         "language" : "scala",
         "phase" : 0
       },
