@@ -32064,6 +32064,32 @@
         }
       }
     },
+    "SubGraph_99503" : {
+      "id" : "SubGraph_99503",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "SubGraph_1",
+        "slug" : "sub_graph_1",
+        "x" : 463,
+        "y" : 300.3328857421875,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "57943",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "44261",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ ],
+      "processes" : { }
+    },
     "Join_83003" : {
       "id" : "Join_83003",
       "component" : "Join",
