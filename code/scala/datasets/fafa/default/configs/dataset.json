@@ -1,0 +1,20 @@
+{
+  "textPassword" : null,
+  "format" : "jdbc",
+  "lowerBound" : null,
+  "writeMode" : null,
+  "partitionColumn" : null,
+  "query" : null,
+  "readFromSource" : "dbtable",
+  "credentialUsername" : null,
+  "credentialScope" : "fasf",
+  "upperBound" : null,
+  "driver" : "akjsdhkja",
+  "jdbcUrl" : "fasfsa",
+  "dbtable" : "faf",
+  "credentialPassword" : null,
+  "textUsername" : null,
+  "numPartitions" : null,
+  "datasetType" : "Warehouse",
+  "credType" : "databricksSecrets"
+}
