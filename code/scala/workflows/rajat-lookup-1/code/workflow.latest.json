@@ -40,7 +40,7 @@
         "x" : 319,
         "y" : 124,
         "language" : "scala",
-        "phase" : "0"
+        "phase" : 0
       },
       "ports" : {
         "inputs" : [ ],
@@ -202,7 +202,7 @@
         "x" : 753,
         "y" : 309,
         "language" : "scala",
-        "phase" : "0"
+        "phase" : 1
       },
       "ports" : {
         "inputs" : [ {
@@ -301,7 +301,7 @@
         "x" : 1101,
         "y" : 289,
         "language" : "scala",
-        "phase" : "0"
+        "phase" : 0
       },
       "ports" : {
         "inputs" : [ {
@@ -359,7 +359,7 @@
         "x" : 631,
         "y" : 59,
         "language" : "scala",
-        "phase" : "0"
+        "phase" : 0
       },
       "ports" : {
         "inputs" : [ {
