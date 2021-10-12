@@ -18825,6 +18825,36 @@
         "isNewDataset" : false,
         "datasetType" : "File"
       }
+    },
+    "Filter_86971" : {
+      "id" : "Filter_86971",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "slug" : "filter_0",
+        "x" : 142,
+        "y" : 187,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "23678",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "73193",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
     }
   },
   "ports" : {
