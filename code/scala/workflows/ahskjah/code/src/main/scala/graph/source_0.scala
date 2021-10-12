@@ -17,7 +17,7 @@ object source_0 {
         spark.read
           .format("jdbc")
           .option("url",
-                  "jdbc:postgresql://test-database.cqu6jgpmsfo.us-east-1.rds.amazonaws.com/asp"
+                  "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp"
           )
           .option("user",
                   dbutils.secrets.get(scope = "rds_secret", key = "username")
