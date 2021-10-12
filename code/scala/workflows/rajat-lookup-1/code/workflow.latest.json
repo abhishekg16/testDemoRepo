@@ -47001,21 +47001,21 @@
         } ],
         "outputs" : [ {
           "id" : "out0",
-          "slug" : "out0"
+          "slug" : "eteer"
         }, {
           "id" : "227",
-          "slug" : "out_1"
+          "slug" : "out_1ertert"
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
         "fileTabs" : [ {
-          "path" : "out0",
+          "path" : "eteer",
           "id" : "out0",
           "language" : "sql",
           "content" : ""
         }, {
-          "path" : "out_1",
+          "path" : "out_1ertert",
           "id" : "227",
           "language" : "sql",
           "content" : ""
