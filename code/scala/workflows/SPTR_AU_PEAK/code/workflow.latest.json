@@ -30359,7 +30359,61 @@
         } ],
         "outputs" : [ {
           "id" : "2203",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_aprv_cnt",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "tmp_auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -30456,17 +30510,99 @@
             } ],
             "outputs" : [ {
               "id" : "67009",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "tmp_auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
           "properties" : {
             "doPivot" : false,
             "aggregate" : [ {
-              "target" : "",
+              "target" : "auth_aprv_cnt",
               "expression" : {
                 "format" : "scala",
-                "expression" : ""
+                "expression" : "sum(col(\"auth_aprv_cnt\")).cast(IntegerType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_tran_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_tran_cnt\")).cast(LongType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_aprv_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_us_aprv_amt\")).cast(DecimalType(18, 2))"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_tran_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "sum(col(\"auth_us_tran_amt\")).cast(DecimalType(18, 2))"
+              },
+              "description" : ""
+            }, {
+              "target" : "tmp_auth_tran_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "max(col(\"auth_tran_cnt\"))"
               },
               "description" : ""
             } ],
@@ -30476,12 +30612,40 @@
             },
             "pivotValues" : [ ],
             "activeTab" : "groupBy",
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "89810##cpd_dt", "89810##cpd_tm", "89810##acct_num_regn_cd", "89810##prod_brnd_grp_cd", "89810##ntwrk_grp_cd", "89810##auth_aprv_cnt", "89810##auth_tran_cnt", "89810##auth_us_aprv_amt", "89810##auth_us_tran_amt" ],
             "groupBy" : [ {
-              "target" : "",
+              "target" : "cpd_dt",
               "expression" : {
                 "format" : "scala",
-                "expression" : ""
+                "expression" : "\tcol(\"cpd_dt\").cast(StringType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "cpd_tm",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"cpd_tm\").cast(StringType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "acct_num_regn_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"acct_num_regn_cd\").cast(StringType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "prod_brnd_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"prod_brnd_grp_cd\").cast(StringType)"
+              },
+              "description" : ""
+            }, {
+              "target" : "ntwrk_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"ntwrk_grp_cd\").cast(StringType)"
               },
               "description" : ""
             } ]
