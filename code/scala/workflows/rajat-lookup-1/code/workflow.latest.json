@@ -181,8 +181,8 @@
       "metadata" : {
         "label" : "Lookup_0",
         "slug" : "lookup_0",
-        "x" : 989,
-        "y" : 339,
+        "x" : 674,
+        "y" : 103,
         "language" : "scala",
         "phase" : "0"
       },
@@ -197,7 +197,8 @@
       "properties" : {
         "isRange" : false,
         "keyColumns" : [ ],
-        "valueColumns" : [ ]
+        "valueColumns" : [ ],
+        "processName" : "Lookup_0"
       }
     }
   },
