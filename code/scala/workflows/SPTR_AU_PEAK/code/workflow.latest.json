@@ -32239,26 +32239,54 @@
           },
           "properties" : {
             "doPivot" : false,
-            "aggregate" : [ {
-              "target" : "",
-              "expression" : {
-                "format" : "scala",
-                "expression" : ""
-              },
-              "description" : ""
-            } ],
+            "aggregate" : [ ],
             "pivotColumn" : {
               "format" : "scala",
               "expression" : "col(\"col_name\")"
             },
             "pivotValues" : [ ],
             "activeTab" : "groupBy",
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "83235##cpd_dt", "83235##cpd_tm", "83235##acct_num_regn_cd", "83235##prod_brnd_grp_cd", "83235##ntwrk_grp_cd", "83235##peak_rec_typ_cd" ],
             "groupBy" : [ {
-              "target" : "",
+              "target" : "cpd_dt",
               "expression" : {
                 "format" : "scala",
-                "expression" : ""
+                "expression" : "col(\"cpd_dt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "cpd_tm",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"cpd_tm\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "acct_num_regn_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"acct_num_regn_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "prod_brnd_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"prod_brnd_grp_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "ntwrk_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"ntwrk_grp_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "peak_rec_typ_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"peak_rec_typ_cd\")"
               },
               "description" : ""
             } ]
