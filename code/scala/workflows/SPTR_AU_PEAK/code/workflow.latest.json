@@ -30858,6 +30858,32 @@
         }
       }
     },
+    "SubGraph_78221" : {
+      "id" : "SubGraph_78221",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "SubGraph_1",
+        "slug" : "sub_graph_1",
+        "x" : 1622,
+        "y" : 257,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "88016",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "70963",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ ],
+      "processes" : { }
+    },
     "Source_99668" : {
       "id" : "Source_99668",
       "component" : "Source",
