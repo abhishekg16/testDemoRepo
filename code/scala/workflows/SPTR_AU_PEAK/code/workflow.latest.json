@@ -30563,8 +30563,78 @@
             "selectedInputFields" : [ ]
           },
           "properties" : {
-            "columnsSelector" : [ ],
-            "expressions" : [ ]
+            "columnsSelector" : [ "74860##cpd_dt", "74860##cpd_tm", "74860##acct_num_regn_cd", "74860##prod_brnd_grp_cd", "74860##ntwrk_grp_cd", "74860##cmls_tran_seq_id_drvd", "74860##auth_aprv_cnt", "74860##auth_tran_cnt", "74860##auth_us_aprv_amt", "74860##auth_us_tran_amt" ],
+            "expressions" : [ {
+              "target" : "cpd_dt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"cpd_dt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "cpd_tm",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "concat(substring(col(\"cpd_tm\"), 1, 2), lit(\":00:00\"))"
+              },
+              "description" : ""
+            }, {
+              "target" : "acct_num_regn_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"acct_num_regn_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "prod_brnd_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"prod_brnd_grp_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "ntwrk_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"ntwrk_grp_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "cmls_tran_seq_id_drvd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"cmls_tran_seq_id_drvd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_aprv_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_aprv_cnt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_tran_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_tran_cnt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_aprv_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_us_aprv_amt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_tran_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_us_tran_amt\")"
+              },
+              "description" : ""
+            } ]
           }
         }
       }
