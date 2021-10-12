@@ -117,6 +117,12 @@
     "sourcePort" : "32990",
     "target" : "Aggregate_94919",
     "targetPort" : "52438"
+  }, {
+    "id" : "971",
+    "source" : "Aggregate_94919",
+    "sourcePort" : "83290",
+    "target" : "SubGraph_85208",
+    "targetPort" : "30906"
   } ],
   "processes" : {
     "Filter_21380" : {
@@ -30223,11 +30229,59 @@
       "ports" : {
         "inputs" : [ {
           "id" : "30906",
-          "slug" : "in0"
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "auth_aprv_cnt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "2203",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "auth_aprv_cnt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -30260,11 +30314,59 @@
           "ports" : {
             "inputs" : [ {
               "id" : "74860",
-              "slug" : "in"
+              "slug" : "in",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "outputs" : [ {
               "id" : "68312",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
