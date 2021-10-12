@@ -29927,17 +29927,62 @@
         } ],
         "outputs" : [ {
           "id" : "83290",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "auth_aprv_cnt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
         "doPivot" : false,
         "aggregate" : [ {
-          "target" : "",
+          "target" : "auth_aprv_cnt",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "sum(col(\"auth_aprv_cnt\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_tran_cnt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "sum(col(\"auth_tran_cnt\"))"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_aprv_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "sum(col(\"auth_us_aprv_amt\")).cast(DecimalType(18, 2))"
+          },
+          "description" : ""
+        }, {
+          "target" : "auth_us_tran_amt",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "sum(col(\"auth_us_tran_amt\")).cast(DecimalType(18, 2))"
           },
           "description" : ""
         } ],
@@ -29946,16 +29991,9 @@
           "expression" : "col(\"col_name\")"
         },
         "pivotValues" : [ ],
-        "activeTab" : "groupBy",
-        "columnsSelector" : [ ],
-        "groupBy" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
+        "activeTab" : "aggregate",
+        "columnsSelector" : [ "52438##auth_aprv_cnt", "52438##auth_tran_cnt", "52438##auth_us_aprv_amt", "52438##auth_us_tran_amt" ],
+        "groupBy" : [ ]
       }
     },
     "Source_76016" : {
