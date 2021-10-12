@@ -29,6 +29,12 @@
     "sourcePort" : "3926",
     "target" : "Filter_53446",
     "targetPort" : "34406"
+  }, {
+    "id" : "905",
+    "source" : "Filter_53446",
+    "sourcePort" : "24741",
+    "target" : "Reformat_26483",
+    "targetPort" : "64393"
   } ],
   "processes" : {
     "Lookup_82736" : {
@@ -434,7 +440,21 @@
       "ports" : {
         "inputs" : [ {
           "id" : "64393",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "lookedup",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "60126",
