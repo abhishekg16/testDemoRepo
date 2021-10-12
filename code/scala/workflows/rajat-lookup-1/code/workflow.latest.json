@@ -249,17 +249,38 @@
         } ],
         "outputs" : [ {
           "id" : "3926",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "lookedup",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "last_name",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "96396##last_name" ],
         "expressions" : [ {
-          "target" : "",
+          "target" : "lookedup",
           "expression" : {
             "format" : "scala",
-            "expression" : ""
+            "expression" : "lookup(\"MyLookup1\", col(\"customer_id\")).getField(\"first_name\")"
+          },
+          "description" : ""
+        }, {
+          "target" : "last_name",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"last_name\")"
           },
           "description" : ""
         } ]
