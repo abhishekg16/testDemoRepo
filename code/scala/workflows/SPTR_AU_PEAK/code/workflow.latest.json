@@ -30868,8 +30868,8 @@
       "id" : "SubGraph_78221",
       "component" : "SubGraph",
       "metadata" : {
-        "label" : "SubGraph_1",
-        "slug" : "sub_graph_1",
+        "label" : "SubGraph_MIN",
+        "slug" : "sub_graph_min",
         "x" : 1495,
         "y" : 316,
         "language" : "scala",
