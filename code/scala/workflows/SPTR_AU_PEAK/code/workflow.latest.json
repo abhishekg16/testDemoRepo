@@ -129,12 +129,6 @@
     "sourcePort" : "83290",
     "target" : "SubGraph_78221",
     "targetPort" : "88016"
-  }, {
-    "id" : "732",
-    "source" : "SubGraph_85208",
-    "sourcePort" : "2203",
-    "target" : "Reformat_23832",
-    "targetPort" : "26473"
   } ],
   "processes" : {
     "Filter_21380" : {
@@ -31610,94 +31604,6 @@
         },
         "isNewDataset" : false,
         "datasetType" : "File"
-      }
-    },
-    "Reformat_23832" : {
-      "id" : "Reformat_23832",
-      "component" : "Reformat",
-      "metadata" : {
-        "label" : "Reformat_2",
-        "slug" : "reformat_2",
-        "x" : 1581,
-        "y" : 137.3328857421875,
-        "language" : "scala",
-        "phase" : 0
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "26473",
-          "slug" : "in",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "cpd_dt",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "cpd_tm",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "acct_num_regn_cd",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "prod_brnd_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "ntwrk_grp_cd",
-              "type" : "string",
-              "nullable" : false,
-              "metadata" : { }
-            }, {
-              "name" : "auth_aprv_cnt",
-              "type" : "integer",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_tran_cnt",
-              "type" : "long",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_aprv_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "auth_us_tran_amt",
-              "type" : "decimal(18,2)",
-              "nullable" : true,
-              "metadata" : { }
-            }, {
-              "name" : "tmp_auth_tran_cnt",
-              "type" : "long",
-              "nullable" : true,
-              "metadata" : { }
-            } ]
-          }
-        } ],
-        "outputs" : [ {
-          "id" : "5634",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ]
-      },
-      "properties" : {
-        "columnsSelector" : [ ],
-        "expressions" : [ {
-          "target" : "",
-          "expression" : {
-            "format" : "scala",
-            "expression" : ""
-          },
-          "description" : ""
-        } ]
       }
     },
     "Filter_91512" : {
