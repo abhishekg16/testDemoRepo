@@ -25,6 +25,13 @@
             "value" : "20200814"
           },
           "optional" : false
+        }, {
+          "name" : "TARGET_PATH",
+          "kind" : {
+            "type" : "string",
+            "value" : "/dp/data/sptr"
+          },
+          "optional" : false
         } ]
       },
       "fabrics" : { }
