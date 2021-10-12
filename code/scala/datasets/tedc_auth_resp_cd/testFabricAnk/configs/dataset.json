@@ -1,0 +1,75 @@
+{
+  "format" : "avro",
+  "recordName" : null,
+  "path" : "dbfs:/FileStore/Users/MaciejV/ptr-data/TEDC_AUTH_RESP_CD.avro/",
+  "writeMode" : null,
+  "compression" : null,
+  "partitionColumns" : null,
+  "schema" : {
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "auth_resp_cd",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "auth_resp_nm",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "auth_resp_rlup_cd",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "auth_resp_rlup_nm",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_start_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_upd_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_end_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "actv_ind",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "version_num",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "insrt_ts",
+      "type" : "timestamp",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "upd_ts",
+      "type" : "timestamp",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "dt",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    } ]
+  },
+  "ignoreExtension" : null,
+  "recordNamespace" : null,
+  "datasetType" : "File"
+}
