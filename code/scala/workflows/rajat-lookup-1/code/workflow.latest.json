@@ -269,8 +269,8 @@
       "id" : "Lookup_82736",
       "component" : "Lookup",
       "metadata" : {
-        "label" : "Lookup_0",
-        "slug" : "lookup_0",
+        "label" : "MyLookup1",
+        "slug" : "my_lookup_1",
         "x" : 674,
         "y" : 103,
         "language" : "scala",
@@ -332,7 +332,7 @@
         "isRange" : false,
         "keyColumns" : [ "customer_id" ],
         "valueColumns" : [ "first_name" ],
-        "processName" : "Lookup_0"
+        "processName" : "MyLookup1"
       }
     }
   },

@@ -9,9 +9,9 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 
-object lookup_0 {
+object my_lookup_1 {
 
   def apply(spark: SparkSession, in0: DataFrame): Unit =
-    createLookup("Lookup_0", in0, spark, List("customer_id"), "first_name")
+    createLookup("MyLookup1", in0, spark, List("customer_id"), "first_name")
 
 }
