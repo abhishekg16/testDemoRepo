@@ -70189,6 +70189,32 @@
         }
       }
     },
+    "SubGraph_76069" : {
+      "id" : "SubGraph_76069",
+      "component" : "SubGraph",
+      "metadata" : {
+        "label" : "SubGraph_1",
+        "slug" : "sub_graph_1",
+        "x" : 1477,
+        "y" : 387,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "7050",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "92655",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : { },
+      "connections" : [ ],
+      "processes" : { }
+    },
     "Reformat_31274" : {
       "id" : "Reformat_31274",
       "component" : "Reformat",
