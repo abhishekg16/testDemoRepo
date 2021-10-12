@@ -7,7 +7,7 @@ import config.ConfigStore._
 import udfs.UDFs._
 import udfs._
 import graph._
-import graph.sub_graph_0
+import graph.sub_graph_hour
 
 object Main {
 
@@ -25,9 +25,9 @@ object Main {
     val df_source_2_out = source_2(spark)
     val df_join_0_out =
       join_0(spark, df_filter_1_out, df_filter_2_out, df_source_2_out)
-    val df_reformat_1_out   = reformat_1(spark,  df_join_0_out)
-    val df_aggregate_0_out  = aggregate_0(spark, df_reformat_1_out)
-    val df_sub_graph_0_out0 = sub_graph_0.apply(spark)
+    val df_reformat_1_out      = reformat_1(spark,  df_join_0_out)
+    val df_aggregate_0_out     = aggregate_0(spark, df_reformat_1_out)
+    val df_sub_graph_hour_out0 = sub_graph_hour.apply(spark)
   }
 
   def main(args: Array[String]): Unit = {
