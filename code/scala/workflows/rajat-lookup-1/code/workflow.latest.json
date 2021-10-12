@@ -426,8 +426,8 @@
       "metadata" : {
         "label" : "Reformat_1",
         "slug" : "reformat_1",
-        "x" : 861,
-        "y" : 155,
+        "x" : 1302,
+        "y" : 281,
         "language" : "scala",
         "phase" : 0
       },
