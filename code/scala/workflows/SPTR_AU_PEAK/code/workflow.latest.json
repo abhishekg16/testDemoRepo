@@ -99,6 +99,12 @@
     "sourcePort" : "23266",
     "target" : "Join_83003",
     "targetPort" : "23717"
+  }, {
+    "id" : "921",
+    "source" : "Source_99668",
+    "sourcePort" : "15203",
+    "target" : "Join_83003",
+    "targetPort" : "952"
   } ],
   "processes" : {
     "Filter_21380" : {
@@ -30799,6 +30805,73 @@
               "metadata" : { }
             } ]
           }
+        }, {
+          "id" : "952",
+          "slug" : "in2",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "auth_resp_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_resp_nm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_resp_rlup_cd",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_resp_rlup_nm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "eff_start_dt",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "eff_upd_dt",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "eff_end_dt",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "actv_ind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "version_num",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "insrt_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "upd_ts",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "dt",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "18428",
@@ -30814,6 +30887,13 @@
           "expression" : {
             "format" : "scala",
             "expression" : ""
+          },
+          "joinType" : "inner"
+        }, {
+          "alias" : "in2",
+          "expression" : {
+            "format" : "scala",
+            "expression" : "col(\"in2.id\") === col(\"in1.id\")"
           },
           "joinType" : "inner"
         } ],

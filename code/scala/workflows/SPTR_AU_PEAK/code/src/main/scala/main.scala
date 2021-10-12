@@ -22,7 +22,8 @@ object Main {
     val df_filter_2_out = filter_2(spark, df_source_1_out)
     val df_source_2_out = source_2(spark)
     val df_filter_1_out = filter_1(spark, df_set_operation_0_out)
-    val df_join_0_out   = join_0(spark,   df_filter_1_out, df_filter_2_out)
+    val df_join_0_out =
+      join_0(spark, df_filter_1_out, df_filter_2_out, df_source_2_out)
   }
 
   def main(args: Array[String]): Unit = {
