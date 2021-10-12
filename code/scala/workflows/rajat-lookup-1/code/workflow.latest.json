@@ -46980,15 +46980,18 @@
       "metadata" : {
         "label" : "SQLStatement_0",
         "slug" : "sql_statement_0",
-        "x" : 703,
-        "y" : 518,
+        "x" : 551,
+        "y" : 300,
         "language" : "scala",
         "phase" : 0
       },
       "ports" : {
-        "inputs" : [ ],
+        "inputs" : [ {
+          "id" : "298",
+          "slug" : "in1"
+        } ],
         "outputs" : [ {
-          "id" : "61766",
+          "id" : "out0",
           "slug" : "out0"
         } ],
         "selectedInputFields" : [ ]
@@ -47000,7 +47003,7 @@
           "language" : "sql",
           "content" : ""
         } ],
-        "inputPortNames" : [ ]
+        "inputPortNames" : [ "in1" ]
       }
     }
   },
