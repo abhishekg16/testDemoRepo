@@ -1,0 +1,78 @@
+{
+  "format" : "parquet",
+  "path" : "dbfs:/FileStore/Users/MaciejV/ptr-data/TEDC_APPLN_NTWRK_GRP_small.parquet",
+  "writeMode" : null,
+  "compression" : null,
+  "partitionColumns" : null,
+  "schema" : {
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "ntwrk_id",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "usr_cd",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "appln_ntwrk_id",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "ntwrk_grp_cd",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "appln_ntwrk_grp_desc",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_start_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_upd_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "eff_end_dt",
+      "type" : "date",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "actv_ind",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "version_num",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "insrt_ts",
+      "type" : "timestamp",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "upd_ts",
+      "type" : "timestamp",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "dt",
+      "type" : "integer",
+      "nullable" : true,
+      "metadata" : { }
+    } ]
+  },
+  "mergeSchema" : null,
+  "datasetType" : "File"
+}
