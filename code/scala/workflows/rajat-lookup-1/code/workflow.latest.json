@@ -46977,7 +46977,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "operationType" : "unionAll"
+        "operationType" : "except"
       }
     },
     "SQLStatement_43864" : {
