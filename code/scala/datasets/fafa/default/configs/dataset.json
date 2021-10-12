@@ -9,6 +9,30 @@
   "credentialUsername" : null,
   "credentialScope" : "fasf",
   "upperBound" : null,
+  "schema" : {
+    "type" : "struct",
+    "fields" : [ {
+      "name" : "uid",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "entity_kind",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "aspect_kind",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "json_content",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    } ]
+  },
   "driver" : "akjsdhkja",
   "jdbcUrl" : "fasfsa",
   "dbtable" : "faf",
