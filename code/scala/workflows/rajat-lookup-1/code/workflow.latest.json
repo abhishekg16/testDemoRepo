@@ -46995,13 +46995,13 @@
         "inputs" : [ {
           "id" : "741",
           "slug" : "in0"
+        }, {
+          "id" : "967",
+          "slug" : "in1"
         } ],
         "outputs" : [ {
           "id" : "out0",
           "slug" : "out0"
-        }, {
-          "id" : "438",
-          "slug" : "out_1"
         } ],
         "selectedInputFields" : [ ]
       },
@@ -47011,13 +47011,8 @@
           "id" : "out0",
           "language" : "sql",
           "content" : ""
-        }, {
-          "path" : "out_1",
-          "id" : "438",
-          "language" : "sql",
-          "content" : ""
         } ],
-        "inputPortNames" : [ "in0" ]
+        "inputPortNames" : [ "in0", "in1" ]
       }
     }
   },
