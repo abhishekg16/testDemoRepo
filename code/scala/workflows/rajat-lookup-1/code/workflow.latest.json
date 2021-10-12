@@ -47022,6 +47022,40 @@
         } ],
         "inputPortNames" : [ "in0", "in1" ]
       }
+    },
+    "Reformat_6769" : {
+      "id" : "Reformat_6769",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 554.5,
+        "y" : 314.5,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "75255",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "99426",
+          "slug" : "out0"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
+      }
     }
   },
   "ports" : {
