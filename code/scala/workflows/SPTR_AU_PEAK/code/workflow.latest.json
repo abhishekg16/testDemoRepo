@@ -32161,8 +32161,8 @@
           "metadata" : {
             "label" : "Reformat_0",
             "slug" : "reformat_0",
-            "x" : 258,
-            "y" : -9,
+            "x" : 251,
+            "y" : 12,
             "language" : "scala",
             "phase" : 0
           },
