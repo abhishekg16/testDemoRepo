@@ -32227,17 +32227,134 @@
             } ],
             "outputs" : [ {
               "id" : "7701",
-              "slug" : "out"
+              "slug" : "out",
+              "schema" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "cpd_dt",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "cpd_tm",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "acct_num_regn_cd",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "prod_brnd_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "ntwrk_grp_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_tran_cnt",
+                  "type" : "long",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_aprv_cnt",
+                  "type" : "double",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_aprv_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "auth_us_tran_amt",
+                  "type" : "decimal(18,2)",
+                  "nullable" : true,
+                  "metadata" : { }
+                }, {
+                  "name" : "peak_rec_typ_cd",
+                  "type" : "string",
+                  "nullable" : false,
+                  "metadata" : { }
+                } ]
+              }
             } ],
             "selectedInputFields" : [ ]
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "54669##cpd_dt", "54669##cpd_tm", "54669##acct_num_regn_cd", "54669##ntwrk_grp_cd", "54669##auth_tran_cnt", "54669##auth_aprv_cnt", "54669##auth_us_aprv_amt", "54669##auth_us_tran_amt" ],
             "expressions" : [ {
-              "target" : "",
+              "target" : "cpd_dt",
               "expression" : {
                 "format" : "scala",
-                "expression" : ""
+                "expression" : "col(\"cpd_dt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "cpd_tm",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"cpd_tm\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "acct_num_regn_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"acct_num_regn_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "prod_brnd_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "lit(\"-\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "ntwrk_grp_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"ntwrk_grp_cd\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_tran_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_tran_cnt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_aprv_cnt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_aprv_cnt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_aprv_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_us_aprv_amt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "auth_us_tran_amt",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "col(\"auth_us_tran_amt\")"
+              },
+              "description" : ""
+            }, {
+              "target" : "peak_rec_typ_cd",
+              "expression" : {
+                "format" : "scala",
+                "expression" : "lit(\"N\")"
               },
               "description" : ""
             } ]
