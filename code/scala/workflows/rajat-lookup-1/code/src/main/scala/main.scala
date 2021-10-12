@@ -11,8 +11,9 @@ import graph._
 object Main {
 
   def apply(spark: SparkSession): Unit = {
-    val df_source_0_out0        = source_0(spark)
-    val df_set_operation_0_out0 = set_operation_0(spark, df_source_0_out0)
+    val df_source_0_out0 = source_0(spark)
+    val df_set_operation_0_out0 =
+      set_operation_0(spark, df_source_0_out0, df_source_0_out0)
     val (df_sql_statement_0_eteer, df_sql_statement_0_out_1ertert) =
       sql_statement_0(spark)
     df_set_operation_0_out0.cache().count()
