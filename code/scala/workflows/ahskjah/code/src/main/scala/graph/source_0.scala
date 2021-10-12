@@ -26,7 +26,7 @@ object source_0 {
                   dbutils.secrets.get(scope = "rds_secret", key = "password")
           )
           .option("dbtable", "aspect")
-          .option("driver",  "")
+          .option("driver",  "org.postgresql.Driver")
           .load()
       case _ =>
         throw new Exception("No valid dataset present to read fabric")

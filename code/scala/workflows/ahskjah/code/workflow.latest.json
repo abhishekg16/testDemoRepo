@@ -70,7 +70,7 @@
             "type" : "struct",
             "fields" : [ ]
           },
-          "driver" : "",
+          "driver" : "org.postgresql.Driver",
           "jdbcUrl" : "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp",
           "dbtable" : "aspect",
           "credentialPassword" : null,
