@@ -175,6 +175,36 @@
         "isNewDataset" : false,
         "datasetType" : "File"
       }
+    },
+    "Filter_16274" : {
+      "id" : "Filter_16274",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "slug" : "filter_0",
+        "x" : 669,
+        "y" : 357,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "1628",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "74666",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
     }
   },
   "ports" : {
