@@ -32142,7 +32142,61 @@
         } ],
         "outputs" : [ {
           "id" : "44261",
-          "slug" : "out0"
+          "slug" : "out0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "cpd_dt",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "cpd_tm",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "acct_num_regn_cd",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "prod_brnd_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "ntwrk_grp_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "peak_rec_typ_cd",
+              "type" : "string",
+              "nullable" : false,
+              "metadata" : { }
+            }, {
+              "name" : "auth_tran_cnt",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_aprv_cnt",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_aprv_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "auth_us_tran_amt",
+              "type" : "decimal(18,2)",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -32165,6 +32219,12 @@
         "sourcePort" : "43957",
         "target" : "WindowFunction_99802",
         "targetPort" : "19795"
+      }, {
+        "id" : "650",
+        "source" : "Aggregate_18182",
+        "sourcePort" : "43957",
+        "target" : "SubGraph_99503",
+        "targetPort" : "44261"
       } ],
       "processes" : {
         "Reformat_65126" : {
