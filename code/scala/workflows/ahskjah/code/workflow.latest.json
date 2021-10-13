@@ -17,6 +17,12 @@
     "sourcePort" : "34904",
     "target" : "Target_54232",
     "targetPort" : "56458"
+  }, {
+    "id" : "522",
+    "source" : "Source_31885",
+    "sourcePort" : "34904",
+    "target" : "Filter_90169",
+    "targetPort" : "81719"
   } ],
   "processes" : {
     "Source_31885" : {
@@ -245,19 +251,67 @@
       "metadata" : {
         "label" : "Filter_0",
         "slug" : "filter_0",
-        "x" : 1133,
-        "y" : 182,
+        "x" : 713,
+        "y" : 203,
         "language" : "scala",
         "phase" : 0
       },
       "ports" : {
         "inputs" : [ {
           "id" : "81719",
-          "slug" : "in"
+          "slug" : "in",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "outputs" : [ {
           "id" : "60814",
-          "slug" : "out"
+          "slug" : "out",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "uid",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "entity_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "aspect_kind",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "json_content",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            } ]
+          }
         } ],
         "selectedInputFields" : [ ]
       },
@@ -267,6 +321,40 @@
           "format" : "scala",
           "expression" : "lit(true)"
         }
+      }
+    },
+    "Reformat_28997" : {
+      "id" : "Reformat_28997",
+      "component" : "Reformat",
+      "metadata" : {
+        "label" : "Reformat_0",
+        "slug" : "reformat_0",
+        "x" : 1081,
+        "y" : 131,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "15684",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "40970",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "expressions" : [ {
+          "target" : "",
+          "expression" : {
+            "format" : "scala",
+            "expression" : ""
+          },
+          "description" : ""
+        } ]
       }
     }
   },
