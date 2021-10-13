@@ -12,6 +12,7 @@ object Main {
 
   def apply(spark: SparkSession): Unit = {
     val df_source_0_out = source_0(spark)
+    val df_source_1_out = source_1(spark)
   }
 
   def main(args: Array[String]): Unit = {
