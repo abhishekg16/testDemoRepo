@@ -181,8 +181,8 @@
       "metadata" : {
         "label" : "Source_0",
         "slug" : "source_0",
-        "x" : 1472,
-        "y" : 321,
+        "x" : 1280,
+        "y" : 269,
         "language" : "scala",
         "phase" : 0
       },
