@@ -142,10 +142,10 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ "81719##phone" ],
+        "columnsSelector" : [ "81719##country_code" ],
         "condition" : {
           "format" : "scala",
-          "expression" : "\n\n\n\n\ncol(\"phone\")>10\n\n\n&&\n\n\n\ncol(\"phone\")>10"
+          "expression" : "\n\n\n\n\ncol(\"country_code\")>10\n\n\n&&\n\n\n\ncol(\"country_code\")>10"
         }
       }
     },
