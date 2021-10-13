@@ -49,22 +49,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
@@ -77,22 +97,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
@@ -128,22 +168,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
@@ -153,7 +213,7 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "format" : "jdbc",
+        "format" : "csv",
         "datasetTypes" : [ {
           "label" : "FILE",
           "value" : "File",
@@ -168,55 +228,87 @@
           "icon" : "Database"
         } ],
         "dataFormats" : [ {
-          "label" : "JDBC",
-          "value" : "jdbc",
+          "label" : "CSV",
+          "value" : "csv",
+          "icon" : "Csv"
+        }, {
+          "label" : "JSON",
+          "value" : "json",
+          "icon" : "Json"
+        }, {
+          "label" : "PARQUET",
+          "value" : "parquet",
+          "icon" : "Parquet"
+        }, {
+          "label" : "AVRO",
+          "value" : "avro",
           "icon" : "File"
+        }, {
+          "label" : "DELTA",
+          "value" : "delta",
+          "icon" : "Delta"
+        }, {
+          "label" : "ORC",
+          "value" : "orc",
+          "icon" : "File"
+        }, {
+          "label" : "TEXT",
+          "value" : "text",
+          "icon" : "Document"
         } ],
-        "datasetId" : "271",
+        "datasetId" : "270",
         "dataset" : {
-          "textPassword" : null,
-          "lowerBound" : null,
-          "writeMode" : null,
-          "partitionColumn" : null,
-          "query" : null,
-          "readFromSource" : "dbtable",
-          "credentialUsername" : "sdl",
-          "credentialScope" : "testGCred",
-          "upperBound" : null,
+          "path" : "dbfs:/Prophecy/79arpan@prophecy.io/CustomersDatasetInput.csv",
+          "separator" : ",",
+          "inferSchema" : true,
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             } ]
           },
-          "driver" : "org.postgresql.Driver",
-          "jdbcUrl" : "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp",
-          "dbtable" : "aspect",
-          "credentialPassword" : "5dlau20",
-          "textUsername" : null,
-          "numPartitions" : null,
-          "credType" : "databricksSecrets"
+          "header" : true
         },
         "isNewDataset" : false,
-        "datasetType" : "Warehouse"
+        "datasetType" : "File"
       }
     },
     "Target_54232" : {
@@ -237,22 +329,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
@@ -296,22 +408,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
@@ -347,22 +479,42 @@
           "schema" : {
             "type" : "struct",
             "fields" : [ {
-              "name" : "uid",
+              "name" : "customer_id",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "entity_kind",
+              "name" : "first_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "aspect_kind",
+              "name" : "last_name",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }
             }, {
-              "name" : "json_content",
+              "name" : "phone",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "email",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "country_code",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_open_date",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : { }
+            }, {
+              "name" : "account_flags",
               "type" : "string",
               "nullable" : true,
               "metadata" : { }

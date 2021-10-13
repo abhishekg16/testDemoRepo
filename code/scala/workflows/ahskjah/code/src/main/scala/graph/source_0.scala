@@ -12,22 +12,25 @@ object source_0 {
   def apply(spark: SparkSession): DataFrame = {
     Config.fabricName match {
       case "default" =>
-        import spark.implicits._
-        import com.databricks.dbutils_v1.DBUtilsHolder.dbutils
         spark.read
-          .format("jdbc")
-          .option("url",
-                  "jdbc:postgresql://test-database.cqu6jg6pmsfo.us-east-1.rds.amazonaws.com/asp"
+          .format("csv")
+          .option("header", true)
+          .option("sep",    ",")
+          .schema(
+            StructType(
+              Array(
+                StructField("customer_id",       StringType, true),
+                StructField("first_name",        StringType, true),
+                StructField("last_name",         StringType, true),
+                StructField("phone",             StringType, true),
+                StructField("email",             StringType, true),
+                StructField("country_code",      StringType, true),
+                StructField("account_open_date", StringType, true),
+                StructField("account_flags",     StringType, true)
+              )
+            )
           )
-          .option("user",
-                  dbutils.secrets.get(scope = "testGCred", key = "username")
-          )
-          .option("password",
-                  dbutils.secrets.get(scope = "testGCred", key = "password")
-          )
-          .option("dbtable", "aspect")
-          .option("driver",  "org.postgresql.Driver")
-          .load()
+          .load("dbfs:/Prophecy/79arpan@prophecy.io/CustomersDatasetInput.csv")
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }
