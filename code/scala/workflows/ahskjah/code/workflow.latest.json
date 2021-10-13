@@ -145,7 +145,7 @@
         "columnsSelector" : [ "81719##phone" ],
         "condition" : {
           "format" : "scala",
-          "expression" : "\n\n\n\n\ncol(\"phone\")>10"
+          "expression" : "\n\n\n\n\ncol(\"phone\")>10\n\n\n&&\n\n\n\ncol(\"phone\")>10"
         }
       }
     },
