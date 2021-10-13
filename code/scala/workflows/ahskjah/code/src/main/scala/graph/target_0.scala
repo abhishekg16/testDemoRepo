@@ -14,21 +14,16 @@ object target_0 {
       case "default" =>
         import spark.implicits._
         import com.databricks.dbutils_v1.DBUtilsHolder.dbutils
-        var writer = in.write.format("jdbc")
-        "fasfsa".foreach { url =>
-          writer = writer.option("url", url)
-        }
-        writer = writer.option("dbtable", "faf")
-        writer = writer.option(
-          "user",
-          dbutils.secrets.get(scope = "fasf", key = "username")
-        )
-        writer = writer.option(
-          "password",
-          dbutils.secrets.get(scope = "fasf", key = "password")
-        )
-        writer = writer.option("driver", "akjsdhkja")
-        writer.save()
+        in.write
+          .format("jdbc")
+          .option("url",     "fasfsa")
+          .option("dbtable", "faf")
+          .option("user",    dbutils.secrets.get(scope = "fasf", key = "username"))
+          .option("password",
+                  dbutils.secrets.get(scope = "fasf", key = "password")
+          )
+          .option("driver", "akjsdhkja")
+          .save()
       case _ =>
         throw new Exception("No valid dataset present to read fabric")
     }

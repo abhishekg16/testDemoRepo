@@ -238,6 +238,36 @@
         "isNewDataset" : false,
         "datasetType" : "Warehouse"
       }
+    },
+    "Filter_90169" : {
+      "id" : "Filter_90169",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_0",
+        "slug" : "filter_0",
+        "x" : 1133,
+        "y" : 182,
+        "language" : "scala",
+        "phase" : 0
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "81719",
+          "slug" : "in"
+        } ],
+        "outputs" : [ {
+          "id" : "60814",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ]
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "scala",
+          "expression" : "lit(true)"
+        }
+      }
     }
   },
   "ports" : {
