@@ -12,8 +12,8 @@ object Main {
 
   def apply(spark: SparkSession): Unit = {
     val df_source_1_out   = source_1(spark)
-    val df_filter_0_out   = filter_0(spark, df_source_1_out)
-    val df_reformat_0_out = reformat_0(spark)
+    val df_filter_0_out   = filter_0(spark,   df_source_1_out)
+    val df_reformat_0_out = reformat_0(spark, df_filter_0_out)
   }
 
   def main(args: Array[String]): Unit = {
