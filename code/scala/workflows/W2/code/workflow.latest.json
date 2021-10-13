@@ -124,6 +124,7 @@
         "dataset" : {
           "path" : "dbfs:/Prophecy/abhishek1@prophecy.io/CustomersDatasetInput.csv",
           "separator" : ",",
+          "encoding" : "",
           "inferSchema" : true,
           "schema" : {
             "type" : "struct",

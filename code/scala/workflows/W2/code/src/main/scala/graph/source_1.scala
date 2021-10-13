@@ -14,8 +14,9 @@ object source_1 {
       case "testFabricAnk" =>
         spark.read
           .format("csv")
-          .option("header", true)
-          .option("sep",    ",")
+          .option("header",   true)
+          .option("sep",      ",")
+          .option("encoding", "")
           .schema(
             StructType(
               Array(
