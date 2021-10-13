@@ -12,22 +12,42 @@
   "schema" : {
     "type" : "struct",
     "fields" : [ {
-      "name" : "uid",
+      "name" : "customer_id",
       "type" : "string",
       "nullable" : true,
       "metadata" : { }
     }, {
-      "name" : "entity_kind",
+      "name" : "first_name",
       "type" : "string",
       "nullable" : true,
       "metadata" : { }
     }, {
-      "name" : "aspect_kind",
+      "name" : "last_name",
       "type" : "string",
       "nullable" : true,
       "metadata" : { }
     }, {
-      "name" : "json_content",
+      "name" : "phone",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "email",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "country_code",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "account_open_date",
+      "type" : "string",
+      "nullable" : true,
+      "metadata" : { }
+    }, {
+      "name" : "account_flags",
       "type" : "string",
       "nullable" : true,
       "metadata" : { }
