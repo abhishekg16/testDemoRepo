@@ -142,10 +142,10 @@
         "selectedInputFields" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "81719##phone" ],
         "condition" : {
           "format" : "scala",
-          "expression" : "lit(true)"
+          "expression" : "\n\n\n\n\ncol(\"phone\")>10"
         }
       }
     },

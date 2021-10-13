@@ -12,6 +12,6 @@ import udfs._
 object filter_0 {
 
   def apply(spark: SparkSession, in: DataFrame): DataFrame =
-    in.filter(lit(true))
+    in.filter(col("phone") > 10)
 
 }
